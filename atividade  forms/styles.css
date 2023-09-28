@@ -1,0 +1,17 @@
+.cinza{
+  background-color: #aaa;
+  width:auto;
+  height: 40px;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+}
+.cinza a{
+    margin-left: 50px;
+}
+ul{
+  list-style-type: none;
+}
+.§inicial{
+    font-style: italic;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Fundamentos da Web</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <h1>Fundamentos da Web </h1>
+    <p class="§inicial"> Exercícios</p>
+    <div class="cinza"> 
+        <a href="index.html"> Retomar</a>
+    </div>
+    <h2>Cadastro de Livros</h2>
+    <fieldset>
+        <legend> cadastro de Livros</legend>
+        <form action="http://httpbin.org/post" method="POST">
+            <label for="ipttitulo"> Título </label>
+            <input type="text" name="titulo" id="ipttitulo" placeholder="Digite o título do livro">
+            <br>
+            <br>
+            <label for="iptdescricao"> Descricao </label>
+            <textarea id="iptdescricao" placeholder="Digite uma descricao para o livro"> </textarea>
+            <br>
+            <br>
+            <label for="iptautores"> Autores </label>
+            <input type="text" name="autores" id="iptautores" placeholder="Digite os autores da obra">
+            <br>
+            <br>
+            <label for="iptestilo"> Estilo </label>
+            <select name="estilo" id="iptestilo">
+                <option value="01"> Acadêmico </option>
+                <option value="02"> Profissional </option>
+                <option value="03"> Científico </option>
+            </select>
+            <br>
+            <br>
+            <button type="submit"> Enviar </button>
+            <button type="reset"> Limpar </button>
+        </form>
+    </fieldset>
+</body>
+</html>

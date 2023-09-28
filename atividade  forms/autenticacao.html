@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Fundamentos da Web</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <h1>Fundamentos da Web </h1>
+    <p class="§inicial"> Exercícios</p>
+    <div class="cinza"> 
+        <a href="index.html"> Retomar</a>
+    </div>
+    <h2>Contatos</h2>
+    <fieldset>
+        <legend> Entre em contato conosco!</legend>
+        <form action="http://httpbin.org/post" method="POST">
+            <label for="iptnome"> Nome </label>
+            <input type="text" name="nome" id="iptnome" placeholder="Digite seu nome">
+            <br>
+            <br>
+            <label for="iptassunto"> Assunto </label>
+            <input type="text" name="assunto" id="iptassunto">
+            <br>
+            <br>
+            <label for="iptdata"> data de ocorrência </label>
+            <input type="date" name="data" id="iptdata">
+            <br>
+            <br>
+            <label for="iptfoto"> Foto da ocorrência </label>
+            <input type="file" name="foto" id="iptfoto">
+            <br>
+            <br>
+            <label for="ipttel"> Telefone </label>
+            <input type="tel" name="tel" id="ipttel" placeholder="Digite seu telefone">
+            <br>
+            <br>
+            <label for="ipte-mail"> E-mail </label>
+            <input type="email" name="e-mail" id="ipte-mail" placeholder="Digite seu e-mail">
+            <br>
+            <br>
+            <label for="iptmensagem"> Mensagem </label>
+            <textarea id="iptmensagem" placeholder="Digite sua mensagem"> </textarea>
+            <br>
+            <br>
+            <label for="iptestilo"> Estilo </label>
+            <select name="estilo" id="iptestilo">
+                <option value="01"> Acadêmico </option>
+                <option value="02"> Profissional </option>
+                <option value="03"> Científico </option>
+            </select>
+            <br>
+            <br>
+            <button type="submit"> Enviar </button>
+            <button type="reset"> Limpar </button>
+        </form>
+    </fieldset>
+</body>
+</html>
