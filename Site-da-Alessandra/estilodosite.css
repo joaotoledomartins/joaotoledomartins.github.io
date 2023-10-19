@@ -1,0 +1,87 @@
+
+.linha{
+    width: 800px;
+    border: 1px solid black;
+    margin: auto;
+
+}
+#containerimagem{
+    margin: auto;
+    background-image: url(./imagens/Chrysanthemum.jpg);
+    height: 180px;
+    width: 240px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+.first-info{
+    width: 450px;
+    height: 75px;
+    margin: auto;
+    border: 1px solid black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+.parag1{
+    text-align: center;   
+}
+.rodape{
+    background-color: #095986;
+    height: 100px;
+    margin-top: 20px;
+    border-top: solid black;
+}
+
+.lista{
+    list-style-type: none;
+}
+li{
+    margin-top: 5px;
+}
+.caixasdeinfo{
+    border: 1px solid black;
+    width: 450px;
+    height: 75px;
+    margin: 0px auto 0px auto;
+    border-radius: 15px;
+    text-align: center;
+    background-color: #d9d9d9;
+}
+.corlateral{
+    background-color: #cb2525;
+    width: 70px;
+    height: 20px;
+    position: relative;
+    left: 279px;
+    top: 76px;
+    border-radius: 15px 0px 0px 15px;
+    height: 75px;
+}
+h1 , h2{
+    font-weight: lighter;
+    text-indent: 60px;
+}
+body{
+    background-color: #60b5f2;
+
+}
+a{
+    text-decoration: none;
+}
+li a{
+    color: white;
+}
+.footersecun{
+    position: relative;
+    top: 150px;
+    margin-top: 0px;
+}
+.linkretorno{
+    color: white;
+    position: relative;
+    left: 425px;
+    top: 40px;
+
+}
