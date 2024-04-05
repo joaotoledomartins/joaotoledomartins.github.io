@@ -454,7 +454,15 @@ const insereNome = nome => {
 
 const inverteNome = nome => {
     //programe inverte nome aqui
-    return "teste"
+    let nomeInvertido = "";
+    let i = nome.length - 1;
+    while(i >= 0)
+    {
+        nomeInvertido = nomeInvertido + nome[i];
+        i = i - 1;
+    }
+    //return "teste"
+    return nomeInvertido;
 }
 
 // insere nome digitado
@@ -467,6 +475,8 @@ btnAddNome.addEventListener("click", () => {
 btn04.addEventListener("click", ()=>{
     const liNomesDigitados = document.querySelectorAll("#q04-nomes li")
     const listaInvertido = document.querySelector("#q04-nomes-invertidos")
+
+    listaInvertido.innerHTML = ``;
 
     //para cada li de liNomesDigitados, inverta e insira em listaInvertido
     for (let i=0; i<liNomesDigitados.length; i++) {
@@ -488,7 +498,18 @@ const verificaPalindromo = (palavra) => {
     //palavra[2] == palavra[palavra.length-3] ...
     // até chegar no meio; se todas iguais, é palíndromo
     // caso contrário, não
-    return false // programe aqui
+    //return false // programe aqui
+    palavra = palavra.toLowerCase();
+    let i = 1;
+    while(i <= (palavra.length-1)/2)
+    {
+        if(palavra[i-1]  != palavra[palavra.length - i])
+        {
+            return false;
+        }
+        i = i + 1;
+    }
+    return true;
 }
 btn05.addEventListener("click", () => {
     const palavra = getPalavra()
