@@ -1,4 +1,4 @@
-const palavras = ["javascript", "html", "css", "programacao", "computador", "cafe", "deputado", "amor", "cefet", "palavra", "vida", "xoxo", "escalfoni", "jardel"];
+const palavras = ["javascript", "html", "css", "programacao", "computador", "cafe", "deputado", "amor", "cefet", "palavra", "vida", "xoxo", "escalfoni", "jardel", "schuenck", "chuchu", "matematica", "xablau", "maldade", "sexta", "dia", "mori", "baixinha", "galo" , "chris", "bruno", "joao", "bola", "amorim", "samanta", "samara", "duda", "machado", "mariana", "galinheiro", "jurema", "tio", "paulo", "flor", "delicia", "ney", "claudio", "fausto", "deiviane", "angela", "craudio", "rodrigo", "zeze", "eliezer", "dacy", "nilson", "labenga", "helga", "redes", "motorista"];
 let palavraOculta = palavras[Math.floor(Math.random()*palavras.length)]// sorteie uma palavra
 console.log(palavraOculta);
 let divForca = document.querySelector("#palavra-oculta");
