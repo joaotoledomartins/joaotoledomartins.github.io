@@ -43,6 +43,20 @@ document.getElementById("adivinhar").addEventListener("click", function() {
         let tentaAtua = document.querySelector("#tentativas");
         erradaAtua.innerHTML = `Letras erradas: ${letrasErradas}`;
         tentaAtua.innerHTML = `Tentativas restantes: ${tentativasRestantes}`;
+        switch(tentativasRestantes)
+        {
+            case 5:document.querySelector("#imagem").src="./Imagens/cabeça.png";
+            break;
+            case 4:document.querySelector("#imagem").src="./Imagens/corpo.png";
+            break;
+            case 3:document.querySelector("#imagem").src="./Imagens/perna1.png";
+            break;
+            case 2:document.querySelector("#imagem").src="./Imagens/perna2.png";
+            break;
+            case 1:document.querySelector("#imagem").src="./Imagens/braço1.png";
+            break;
+            case 0:document.querySelector("#imagem").src="./Imagens/braço2.png";
+        } 
     }
     // Verificar se o jogador ganhou ou perdeu
     if(tentativasRestantes == 0)
