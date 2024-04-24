@@ -46,16 +46,23 @@ document.getElementById("adivinhar").addEventListener("click", function() {
         switch(tentativasRestantes)
         {
             case 5:document.querySelector("#imagem").src="../forca/imagens/cabeça.jpg";
+            document.querySelector("#imagem").alt="cabeça";
             break;
             case 4:document.querySelector("#imagem").src="../forca/imagens/corpo.jpg";
+            document.querySelector("#imagem").alt="corpo";
             break;
             case 3:document.querySelector("#imagem").src="../forca/imagens/perna1.jpg";
+            document.querySelector("#imagem").alt="perna1";
             break;
             case 2:document.querySelector("#imagem").src="../forca/imagens/perna2.jpg";
+            document.querySelector("#imagem").alt="perna2";
             break;
             case 1:document.querySelector("#imagem").src="../forca/imagens/braço1.jpg";
+            document.querySelector("#imagem").alt="braço1";
             break;
             case 0:document.querySelector("#imagem").src="../forca/imagens/braço2.jpg";
+            document.querySelector("#imagem").alt="braço2";
+            break;
         } 
     }
     // Verificar se o jogador ganhou ou perdeu
