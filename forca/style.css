@@ -1,32 +1,127 @@
-body {
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
     font-family: Arial, sans-serif;
     text-align: center;
+    background-color: #424344;
 }
 
-h1 {
-    color: #333;
+h1{
+    color: rgb(3, 11, 46);
 }
 
-#palavra-oculta {
+.blink {
+    animation: blink 2s  infinite;
+  }
+  
+  @keyframes blink{
+    14.2%{
+      color: #FF0000;
+    }
+    28.4%{
+      color: #ff7F00;
+    }
+    42.6%{
+      color: #ffff00;
+    }
+    56.8%{
+        color: #00ff00;
+    }
+    71%{
+        color: #0000ff;
+    }
+    85.2%{
+        color: #4b0082;
+    }
+    100%{
+        clor: #8a2be2;
+    }
+  }
+
+#palavra-oculta{
     font-size: 24px;
     margin: 20px 0;
+    color: white;
 }
 
-#letra {
+#letra{
     padding: 5px;
     font-size: 16px;
     margin-bottom: 10px;
+    color: white;
+    background-color: rgb(3, 11, 46, 0.9);
 }
 
-#tentativas {
+#tentativas{ 
     margin-top: 20px;
     font-weight: bold;
 }
 
-#letras-erradas {
+#letras-erradas{
     color: red;
 }
 
 #imagem{
+    margin: auto;
+    margin-top: 20px;
     width: 50%;
+}
+#adivinhar{
+    color: white;
+    background-color: #030b2e;
+    padding: 5px;
+    text-align: center;
+}
+#adivinhar:hover{
+    
+    color: #030b2e;
+    background-color: #ffffff;
+    padding: 8px;
+    text-align: center;
+}
+.rodape{
+    background-color: #030b2e;
+    height: 100%;
+    margin-top: 20px;
+    border-top: solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.lista{
+    list-style-type: none;
+}
+.containerLista{
+    width: 33%;
+}
+.containerCre{
+    width: 33%;
+}
+.containerLogo{
+    width: 33%;
+    text-align: center;
+}
+.rodape p{
+    color: white;
+    margin: 0px;
+    margin: auto;
+    text-align: center;
+}
+li{
+    margin: 10px;
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+li a{
+    color: white;
+}
+a:hover{
+    background-color: white;
+    color: #030b2e;
+    padding: 5px;
 }

@@ -81,7 +81,8 @@ body{
     text-align: center;
 }
 li{
-    margin-top: 5px;
+    margin-top: 10px;
+    color: white;
 }
 .caixasDeInfo{
     margin-top: 20px;
@@ -132,6 +133,17 @@ body{
 a{
     text-decoration: none;
 }
+a:hover{
+    background-color: white;
+    color: #030b2e;
+    padding: 5px;
+    border-radius: 0px 15px 15px 0px;
+}
 li a{
     color: white;
+}
+.textoInfo:hover{
+    background-color: white;
+    color: #030b2e;
+    border-radius: 0px 15px 15px 0px;
 }
