@@ -1,0 +1,44 @@
+Siga o passo a passo do tutorial https://www.youtube.com/watch?v=xarRciYWT5Q
+
+Desenvolva seu aplicativo de controle financeiro
+
+HTML e CSS em anexo.
+
+Funcionalidades Futuras
+
+    Despesas e receitas
+
+    criar categorias de despesas e receitas
+
+Exemplo
+Despesas
+      Lazer
+      Saúde
+      Educação
+      Roupas
+      Eletrônicos
+
+Receitas
+      Mesada
+      Salário / Bolsa
+      Rendimentos
+      Extras (freela)
+
+    Criar uma lista de desejos
+
+- O que pretendo comprar, fazer? (Uma viagem, um celular novo, uma roupa)
+
+    Gráficos
+
+Pizza
+      Gastos por categorias
+      Receitas por categorias
+Linha
+      evolução do saldo
+
+Materiais de referência
+Meu trabalho
+Carregar deste dispositivo
+Pontos
+10 pontos possíveis
+
