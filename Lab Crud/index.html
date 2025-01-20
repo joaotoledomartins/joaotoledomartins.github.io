@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script.js" defer></script>
+    <title>Laboratório de CRUD com Classes e Armazenamento no Web Storage</title>
+</head>
+
+<body>
+    <h1>Laboratório de CRUD com Classes e Armazenamento no Web Storage</h1>
+
+    <label>Adicionar</label>
+    <input type="text" placeholder="Título" id="titulo">
+    <input type="text" placeholder="Autor" id="autor">
+    <input type="text" placeholder="Ano de Publicação" id="ano">
+    <button id="bntAdicionar">Adicionar Livro</button>
+
+    <br>
+    <br>
+
+    <label>Atualizar</label>
+    <input type="number" placeholder="ID" id="ID">
+    <input type="text" placeholder="Novo Título" id="titulo2">
+    <input type="text" placeholder="Novo Autor" id="autor2">
+    <input type="text" placeholder="Novo Ano" id="ano2">
+    <button id="bntAtualizar">Atualizar Livro</button>
+
+    <br>
+    <br>
+
+    <label>Deletar</label>
+    <input type="number" placeholder="ID" id="idDel">
+    <button id="bntDelete">Remover Livro</button>
+
+    <br>
+    <br>
+
+    <h2>Livros no sistema</h2>
+    <div id="resp"></div>
+</body>
+
+</html>
