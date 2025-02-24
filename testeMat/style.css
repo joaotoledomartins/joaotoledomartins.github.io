@@ -1,0 +1,175 @@
+/*GERAL*/
+
+    body{
+        padding: 0px;
+        margin: 0px;
+    }
+    .linha{
+        width: 65%;
+        border: 1px solid black;
+        margin: auto;
+
+    }
+    li{
+        margin-top: 10px;
+        color: white;
+    }
+
+    h1, h2{
+        font-weight: bold;
+        text-align: center;
+        color: #ffffff;
+    }
+    body{
+        background-color: #424344;
+
+    }
+    a{
+        text-decoration: none;
+    }
+    a:hover{
+        background-color: white;
+        color: #030b2e;
+    }
+    li a{
+        color: white;
+    }
+
+/*INTRODUÇÃO*/
+
+    .intro{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .containerImagem{
+        display: flex;
+        width: 33%;
+        align-items: center;
+        align-content: stretch;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+    .containerInfo{
+        display: flex;
+        width: 33%;
+        align-items: center;
+        align-content: stretch;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #imagem{
+        width: 40%;
+        height: 1000%;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+    .firstInfo{
+        width: 80%;
+        height: 100%;
+        margin: auto;
+        border: 1px solid rgb(0, 0, 0);
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        background-color: #ffffff;
+        text-align: center;
+    }
+    .parag{
+        text-align: center;
+        white-space: wrap;
+    }
+
+/*PRINCIPAL*/
+
+    .caixasDeInfo{
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .info{
+        border: 1px solid black;
+        border-radius: 15px;
+        width: 35%;
+        height: 75px;
+        display: flex;
+    }
+    .textoInfo{
+        width: 80%;
+        height: 1005;
+        border-radius: 0px 15px 15px 0px;
+        background-color: #d9d9d9;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .corLateral{
+        background-color: #030b2e;
+        width: 20%;
+        border-radius: 15px 0px 0px 15px;
+        height: 100%;
+    }
+    .tituloInfo{
+        margin: auto;
+        font-weight: normal;
+        color: #030b2e;
+    }
+    .linkInfo{
+        margin: auto;
+    }
+    .textoInfo:hover{
+        background-color: white;
+        color: #030b2e;
+        border-radius: 0px 15px 15px 0px;
+    }
+
+/*RODAPÉ*/
+
+    .rodape{
+        background-color: #030b2e;
+        height: 100%;
+        margin-top: 20px;
+        border-top: solid black;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: sticky;
+        bottom: 0px;
+        
+    }
+    .lista{
+        list-style-type: none;
+    }
+    .containerLista{
+        width: 33%;
+    }
+    .containerCre{
+        width: 33%;
+    }
+    .containerLogo{
+        width: 33%;
+        text-align: center;
+    }
+    .rodape p{
+        color: white;
+        margin: 0px;
+        margin: auto;
+        text-align: center;
+    }
+
+    .listaDiv{
+        display: flex;
+        align-items: center;
+        width: 48%;
+        height: 20%;
+    }
+    .listaImg{
+        margin-left: 5px;
+        width: 10%;
+        height: 100%;
+    }
+
+/**/
