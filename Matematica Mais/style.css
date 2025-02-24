@@ -13,7 +13,7 @@ html{
 }
 
 body{
-    background-color: black;
+    background-color: #1C4439;
     height: 100vh;
 }
 
@@ -30,7 +30,7 @@ body{
     padding: 10px 40px;
     font-size: 18px;
     font-weight: 600;
-    background-color: #00ff08;
+    background-color: #AAD69D;
     border: 0;
     border-radius: 30px;
     cursor: pointer;
@@ -38,19 +38,19 @@ body{
 }
 
 button:hover, form .btn-enviar input:hover{
-    box-shadow: 0px 0px 8px #00ff08;
+    box-shadow: 0px 0px 8px #AAD69D;
     transform: scale(1.05);
 }
 
 h2.titulo{
-    color: #fff;
+    color: #6EC8BD;
     font-size: 38px;
     text-align: center;
 
 }
 
 h2.titulo span{
-    color: #00ff08;
+    color: #AAD69D;
     
 }
 
@@ -59,7 +59,7 @@ h2.titulo span{
     height: 60px;
     border-radius: 50%;
     border: none;
-    background-color: #00ff08;
+    background-color: #AAD69D;
     font-size: 22px;
     cursor: pointer;
     margin: 0 5px;
@@ -69,6 +69,8 @@ h2.titulo span{
 /* ESTILO DO CABEÇALHO */
 header{
     padding: 40px 4%;
+    background-color: #242424;
+    border-radius: 0 0 10% 10%;
 }
 
 header > .interface{
@@ -78,15 +80,16 @@ header > .interface{
 }
 
 header a{
-    color: #5c5c5c;
+    color: #7EFF86;
     text-decoration: none;
     display: inline-block;
     transition: .2s;
 }
 
 header nav.menu-desktop a:hover{
-    color: #fff;
+    color: #A7DDEA;
     transform: scale(1.05);
+    padding: 5%;
 }
 
 header nav ul{
@@ -99,13 +102,19 @@ header nav.menu-desktop ul li{
 }
 
 .img-header{
-    width: 50%;
-    height: 40%;
+    width: 25%;
+    height: 25%;
+    border-radius: 100%;
+}
+.img-header:hover{
+    position: relative;
+    transition: .2s;
+    animation: rolada 2s ease-in-out infinite alternate;
 }
 
 /* ESTILO DO MENU MOBILE */
 .btn-abri-menu i{
-    color: #00ff08;
+    color: #AAD69D;
     font-size: 40px;
 }
 
@@ -114,7 +123,7 @@ header nav.menu-desktop ul li{
 }
 
 .menu-mobile{
-    background-color: #000;
+    background-color: #0E5743;
     height: 100vh;
     position: fixed;
     top: 0;
@@ -138,7 +147,7 @@ header nav.menu-desktop ul li{
 }
 
 .menu-mobile .btn-fechar i{
-    color: #00ff08;
+    color: #AAD69D;
     font-size: 30px;
     cursor: pointer;
 }
@@ -148,15 +157,15 @@ header nav.menu-desktop ul li{
 }
 
 .menu-mobile nav ul li a{
-    color: #fff;
+    color: #7EFF86;
     font-size: 20px;
     font-weight: 300;
     padding: 20px 8%;
     display: block;
 }
 .menu-mobile nav ul li a:hover{
-    background-color: #00ff08;
-    color: #000
+    background-color: #AAD69D;
+    color: #0d809c;
 }
 
 .overlay-menu{
@@ -182,17 +191,18 @@ section.topo-do-site .flex{
 }
 
 .topo-do-site h1{
-    color: #fff;
+    color: #7EFF86;
     font-size: 42px;
+    font-weight: bold;
     line-height: 40px;
 }
 
 .topo-do-site .txt-topo-do-site h1 span{
-    color: #00ff08;
+    color: #AAD69D;
 }
 
 .topo-do-site .txt-topo-do-site p{
-    color: #fff;
+    color: #7EFF86;
     margin: 40px 0px;
 
 }
@@ -201,15 +211,6 @@ section.topo-do-site .flex{
     animation: flutuar 2s ease-in-out infinite alternate;
     width: 325px;
 
-}
-
-@keyframes flutuar{
-    0%{
-        top: 0;
-    }
-    100%{
-        top: 30px;
-    }
 }
 
 /* ESTILO DOS OBJETIVOS */
@@ -232,6 +233,26 @@ section.objetivos .flex{
     transition: .2s;
 }
 
+#gif-1:hover{
+    background-image: url('https://www.gifsanimados.org/data/media/712/numero-imagen-animada-0195.gif');
+    background-size: cover;
+    background-position: center;
+}
+
+#gif-2:hover{
+    background-image: url('https://www.gifsanimados.org/data/media/712/numero-imagen-animada-0196.gif');
+    background-size: cover;
+    background-position: center;
+
+}
+
+#gif-3:hover{
+    background-image: url('https://www.gifsanimados.org/data/media/712/numero-imagen-animada-0197.gif');
+    background-size: cover;
+    background-position: center;
+
+}
+
 .objetivos .objetivos-box:hover{
     transform: scale(1.05);
     box-shadow: 0px 0px 8px #ffffff78;
@@ -239,7 +260,7 @@ section.objetivos .flex{
 
 .objetivos .objetivos-box i{
     font-size: 70px;
-    color:#00ff08;
+    color:#7eff86;
 }
 
 .objetivos .objetivos-box h3{
@@ -258,34 +279,34 @@ section.sobre .flex{
     gap: 60px;
 }
 
-.sobre .txt-sobre{
-    color: #fff;
-}
 
 .sobre .txt-sobre h2{
     font-size: 40px;
     line-height: 40px;
     margin-bottom: 30px;
+    color: #6EC8BD
 }
 
 .sobre .txt-sobre h2 span{
-    color: #00ff08;
+    color: #AAD69D;
     display: block;
 }
 
 .sobre .txt-sobre p{
     margin: 20px 0;
     text-align: justify;
+    color: #fff;
 }
 
 /* ESTILO DOS CONTEÚDOS */
 section.conteudos{
     padding: 80px 4%;
-    box-shadow: 0 0 40px 10px #ffffff1d;
+    box-shadow: 0 0 40px 10px #aad69d1d;
 }
 
 section.conteudos .flex{
     justify-content: space-around;
+    text-align: center;
     margin-top: 60px;
 }
 
@@ -324,6 +345,12 @@ section.conteudos .flex{
 .overlay:hover{
     opacity: 1;
     transition: .5s;
+}
+
+.conteudos h3{
+    font-size: 28px;
+    margin: 15px 0;
+    color: #fff;
 }
 
 /* ESTILOS DO FORMULÁRIO DE CONTATO */
@@ -368,7 +395,7 @@ form .btn-enviar{
 
 form .btn-enviar input{
     width: 120px;
-    background-color: #00ff08;
+    background-color: #AAD69D;
     color: #000;
     font-weight: 700;
     cursor: pointer;
@@ -377,12 +404,14 @@ form .btn-enviar input{
 
 /* ESTILO DO RODAPÉ */
 footer{
-    padding: 60px 4%;
-    box-shadow: 0 0 40px 10px #ffffff1d;
+    padding: 20px 4%;
+    box-shadow: 0 0 40px 10px #aad69d1d;
+    background-color: #242424;
+    border-radius: 10% 10% 0 0;
 }
 
 footer .flex{
-    justify-content: space-between;
+    justify-content: center;
 }
 
 footer .line-footer{
@@ -390,22 +419,36 @@ footer .line-footer{
 }
 
 .borda{
-    border-bottom: 2px solid #00ff08;
+    border-bottom: 2px solid #AAD69D;
 }
 
 footer .line-footer p{
-    color: #fff;
+    color: #7eff86;
     text-align: center;
 }
 footer .line-footer p span{
     display: block;
     font-size: 60%;
 }
+/* ANIMAÇÕES */
 
-.img-footer{
-    width: 20%;
-    height: 100%;
+@keyframes rolada{
+    0%{
+        rotate: 360deg;
+    }
+    
 }
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+
 
 /* Media Queries — Responsividade */
 @media screen and (max-width: 1020px){
