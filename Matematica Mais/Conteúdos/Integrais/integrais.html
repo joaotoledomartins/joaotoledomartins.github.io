@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="../../style.css">
     <script src="../../menu.js" defer></script>
     <link rel="shortcut icon" href="../../Images/Logo Matemática Mais.png">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="../../reveal.js" defer></script>
     <title>Matemática Mais</title>
 </head>
 <body>
@@ -26,7 +28,7 @@
         <section class="topo-do-site" id="topo-do-site">
             <div class="interface">
                 <div class="flex">
-                    <div class="txt-topo-do-site">
+                    <div class="txt-topo-do-site efeito-txt-topo-do-site">
                         <h1 class="txt-degrade">Integrais.</h1>
                         <p>Breve explicação para contextualização da página de Integrais</p>
                         <div class="btn-contato">
@@ -35,7 +37,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="img-topo-do-site">
+                    <div class="img-topo-do-site efeito-img-topo-do-site">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/5/54/Integral_riemann_animada.gif" alt="Gif de Integrais">
                     </div>
                 </div>
@@ -45,21 +47,30 @@
             <div class="interface">
                 <h2 class="titulo">Conteúdos <span> de Integrais.</span></h2>
                 <div class="flex">
-                    <a href="./teste.pdf" target="_blank">
-                        <div class="img-conteudos" style="background-image: url(../../Images/image.png);">
-                            <div class="overlay">Apostila de Integrais</div>
-                        </div>
-                    </a>
-                    <a href="./teste.pdf" target="_blank">
-                        <div class="img-conteudos" style="background-image: url(../../Images/image.png);">
-                            <div class="overlay">Exercícios de Integrais</div>
-                        </div>
-                    </a>
-                    <a href="./teste.pdf" target="_blank">
-                        <div class="img-conteudos" style="background-image: url(../../Images/image.png);">
-                            <div class="overlay">Questões de Integrais</div>
-                        </div>
-                    </a>
+                    <div>
+                        <h3 class="txt-degrade efeito-txt-conteudo">Apostila de Integrais</h3>
+                        <a class="efeito-link-conteudo" href="./teste.pdf" target="_blank">
+                            <div class="img-conteudos" style="background-image: url(../../Images/image.png);">
+                                <div class="overlay">Apostila de Integrais</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <h3 class="txt-degrade efeito-txt-conteudo">Exercícios de Integrais</h3>
+                        <a class="efeito-link-conteudo" href="./teste.pdf" target="_blank">
+                            <div class="img-conteudos" style="background-image: url(../../Images/image.png);">
+                                <div class="overlay">Exercícios de Integrais</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <h3 class="txt-degrade efeito-txt-conteudo">Questões de Integrais</h3>
+                        <a class="efeito-link-conteudo" href="./teste.pdf" target="_blank">
+                            <div class="img-conteudos" style="background-image: url(../../Images/image.png);">
+                                <div class="overlay">Questões de Integrais</div>
+                            </div>
+                        </a>
+                    </div>
                 </div><!--Caso queira adicionar mais conteúdos, é duplicar a div.flex-->
             </div>
         </section>
@@ -69,9 +80,9 @@
             <div class="line-footer">
                 <div class="flex">
                     <div class="btn-social">
-                        <a href="https://www.instagram.com/joao_pedro_toledo_martins/"  target="_blank"><button><i class="bi bi-instagram"></i></button></a>
-                        <a href="https://chat.whatsapp.com/HEma9p2yeiJCgocH8jDAKy"><button><i class="bi bi-whatsapp" target="_blank"></i></button></a>
-                        <a href="mailto:matematicamaiscefet@gmail.com" target="_blank"><button><i class="bi bi-envelope"></i></button></a>
+                        <a class="link-social" href="https://www.instagram.com/joao_pedro_toledo_martins/" target="_blank"><button class="link-insta"><i class="bi bi-instagram"></i></button></a>
+                        <a class="link-social" href="https://chat.whatsapp.com/HEma9p2yeiJCgocH8jDAKy"><button class="link-zap"><i class="bi bi-whatsapp" target="_blank"></i></button></a>
+                        <a class="link-social" href="mailto:matematicamaiscefet@gmail.com" target="_blank"><button class="link-email"><i class="bi bi-envelope"></i></button></a>
                     </div>
                 </div>
             </div>

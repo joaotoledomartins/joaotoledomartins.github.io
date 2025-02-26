@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="menu.js" defer></script>
-    <link rel="shortcut icon" href="Images/Logo Matemática Mais.png">
+    <link rel="shortcut icon" href="./Images/Logo Matemática Mais.png">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="reveal.js" defer></script>
     <title>Matemática Mais</title>
 </head>
 <body>
@@ -18,12 +20,17 @@
             <div class="logo">
                 <img class="img-header" src="Images/Logo Matemática Mais.png" alt="Logo do Matemática Mais">
             </div>
+            <div class="inicio-calculadora btn-contato">
+                <a href="./Calculadora/index.html">
+                    <button class="btn-pulsante">Calculadora</button>
+                </a>    
+            </div>
             <nav class="menu-desktop">
                 <ul>
-                    <li><a href="#topo-do-site">Início</a></li>
-                    <li><a href="#objetivos">Objetivos</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#conteudos">Conteúdos</a></li>
+                    <li><a class="borda-dinamica" href="#topo-do-site">Início</a></li>
+                    <li><a class="borda-dinamica" href="#objetivos">Objetivos</a></li>
+                    <li><a class="borda-dinamica" href="#sobre">Sobre</a></li>
+                    <li><a class="borda-dinamica" href="#conteudos">Conteúdos</a></li>
                 </ul>
             </nav>
             <div class="btn-contato">
@@ -42,6 +49,9 @@
                 </div>
                 <nav>
                     <ul>
+                        <li>
+                            <a href="./Calculadora/index.html">Calculadora</a> 
+                        </li>
                         <li><a href="#topo-do-site">Início</a></li>
                         <li><a href="#objetivos">Objetivos</a></li>
                         <li><a href="#sobre">Sobre</a></li>
@@ -54,12 +64,11 @@
         </div>
         
     </header>
-
     <main>
         <section class="topo-do-site" id="topo-do-site">
             <div class="interface">
                 <div class="flex">
-                    <div class="txt-topo-do-site">
+                    <div class="txt-topo-do-site efeito-txt-topo-do-site">
                         <h1 class="txt-degrade">Frase impactante.</h1>
                         <p>Parágrafo introdutório</p>
                         <div class="btn-contato">
@@ -68,7 +77,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="img-topo-do-site">
+                    <div class="img-topo-do-site efeito-img-topo-do-site">
                         <img src="Images/Logo Matemática Mais.png" alt="Logo Matemática Mais">
                     </div>
                 </div>
@@ -78,17 +87,17 @@
             <div class="interface">
                 <h2 class="titulo">Nossos <span>objetivos.</span></h2>
                 <div class="flex">
-                    <div class="objetivos-box" id="gif-1">
+                    <div class="objetivos-box efeito-objetivo-1 objetivos-card" id="gif-1">
                         <i class="bi bi-calculator txt-degrade"></i>
                         <h3>Matemática</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus temporibus inventore iste! Accusamus similique rerum dolore inventore debitis rem pariatur iusto a ipsam amet optio delectus, ipsa nulla aspernatur praesentium?</p>
                     </div>
-                    <div class="objetivos-box" id="gif-2">
+                    <div class="objetivos-box efeito-objetivo-2 objetivos-card" id="gif-2">
                         <i class="bi bi-backpack txt-degrade"></i>
                         <h3>Escola</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus temporibus inventore iste! Accusamus similique rerum dolore inventore debitis rem pariatur iusto a ipsam amet optio delectus, ipsa nulla aspernatur praesentium?</p>
                     </div>
-                    <div class="objetivos-box" id="gif-3">
+                    <div class="objetivos-box efeito-objetivo-3 objetivos-card" id="gif-3">
                         <i class="bi bi-123 txt-degrade"></i>
                         <h3>Números</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus temporibus inventore iste! Accusamus similique rerum dolore inventore debitis rem pariatur iusto a ipsam amet optio delectus, ipsa nulla aspernatur praesentium?</p>
@@ -99,17 +108,17 @@
         <section class="sobre" id="sobre">
             <div class="interface">
                 <div class="flex">
-                    <div class="img-sobre">
+                    <div class="img-sobre efeito-img-sobre">
                         <img src="Images/Logo Matemática Mais.png" alt="" class="sobre">
                     </div>
-                    <div class="txt-sobre">
+                    <div class="txt-sobre efeito-txt-sobre">
                         <h2>Seja bem-vindo, aluno! <span>Esse é o Matemática Mais.</span></h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, fugit ipsum praesentium eveniet quos minima omnis repellat non ad laudantium reprehenderit quisquam. Distinctio suscipit, corrupti eum nam amet explicabo! Laudantium.</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt corrupti itaque cumque omnis dicta sapiente obcaecati veniam nobis consequuntur iure, architecto perferendis odit magnam doloribus vero hic totam autem ut?</p>
                         <div class="btn-social">
-                            <a href="https://www.instagram.com/joao_pedro_toledo_martins/" target="_blank"><button><i class="bi bi-instagram"></i></button></a>
-                            <a href="https://chat.whatsapp.com/HEma9p2yeiJCgocH8jDAKy"><button><i class="bi bi-whatsapp" target="_blank"></i></button></a>
-                            <a href="mailto:matematicamaiscefet@gmail.com" target="_blank"><button><i class="bi bi-envelope"></i></button></a>
+                            <a class="link-social" href="https://www.instagram.com/joao_pedro_toledo_martins/" target="_blank"><button class="link-insta"><i class="bi bi-instagram insta"></i></button></a>
+                            <a class="link-social" href="https://chat.whatsapp.com/HEma9p2yeiJCgocH8jDAKy"><button class="link-zap"><i class="bi bi-whatsapp" target="_blank"></i></button></a>
+                            <a class="link-social" href="mailto:matematicamaiscefet@gmail.com" target="_blank"><button class="link-email"><i class="bi bi-envelope"></i></button></a>
                         </div>
                     </div>
                 </div>
@@ -119,26 +128,25 @@
             <div class="interface">
                 <h2 class="titulo">Nossos <span>Conteúdos.</span></h2>
                 <div class="flex">
-
                     <div>
-                        <h3>Limites</h3>
-                        <a href="./Conteúdos/Limites/limites.html">
+                        <h3 class="txt-degrade efeito-txt-conteudo">Limites</h3>
+                        <a class="efeito-link-conteudo" href="./Conteúdos/Limites/limites.html">
                             <div class="img-conteudos" style="background-image: url(Images/image.png);">
                                 <div class="overlay">Limites</div>
                             </div>
                         </a>
                     </div>
                     <div>
-                        <h3>Derivadas</h3>
-                        <a href="./Conteúdos/Derivadas/derivadas.html">
+                        <h3 class="txt-degrade efeito-txt-conteudo">Derivadas</h3>
+                        <a class="efeito-link-conteudo" href="./Conteúdos/Derivadas/derivadas.html">
                             <div class="img-conteudos" style="background-image: url(Images/image.png);">
                                 <div class="overlay">Derivadas</div>
                             </div>
                         </a>
                     </div>
                     <div>
-                        <h3>Integrais</h3>
-                        <a href="./Conteúdos/Integrais/integrais.html">
+                        <h3 class="txt-degrade efeito-txt-conteudo">Integrais</h3>
+                        <a class="efeito-link-conteudo" href="./Conteúdos/Integrais/integrais.html">
                             <div class="img-conteudos" style="background-image: url(Images/image.png);">
                                 <div class="overlay">Integrais</div>
                             </div> 
@@ -150,15 +158,28 @@
         </section>
         <section class="formulario" id="formulario">
             <div class="interface">
-                <h2 class="titulo">Fale <span>Conosco.</span></h2>
+                <h2 class="titulo">
+                    <span class="span-form span-form-fale">F</span>
+                    <span class="span-form span-form-fale">a</span>
+                    <span class="span-form span-form-fale">l</span>
+                    <span class="span-form span-form-fale">e</span>
+                    <span class="span-form">C</span>
+                    <span class="span-form">o</span>
+                    <span class="span-form">n</span>
+                    <span class="span-form">o</span>
+                    <span class="span-form">s</span>
+                    <span class="span-form">c</span>
+                    <span class="span-form">o</span>
+                    <span class="span-form">.</span>
+                </h2>
                 <form action="https://formsubmit.co/matematicamaiscefet@gmail.com" method="POST">
-                    <input type="text" name="nome" id="nome" placeholder="Digite seu nome:" required>
-                    <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
-                    <input type="tel" name="telefone" id="telefone" placeholder="Digite seu telefone">
-                    <textarea name="mensagem" id="mensagem" placeholder="Digite sua mensagem" required></textarea>
+                    <input class="efeito-input-form-1" type="text" name="nome" id="nome" placeholder="Digite seu nome:" required>
+                    <input class="efeito-input-form-2" type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
+                    <input class="efeito-input-form-3" type="tel" name="telefone" id="telefone" placeholder="Digite seu telefone">
+                    <textarea class="efeito-input-form-4" name="mensagem" id="mensagem" placeholder="Digite sua mensagem" required></textarea>
                     <input type="hidden" name="_next" value="https://joaotoledomartins.github.io/Matematica%20Mais/obrigado.html">
                     <input type="hidden" name="_subject" value="Novo aluno!">
-                    <div class="btn-enviar"><input type="submit" value="Enviar"></div>
+                    <div class="btn-enviar"><input class="efeito-input-form-5" type="submit" value="Enviar"></div>
                 </form>
                 
             </div>
@@ -169,9 +190,9 @@
             <div class="line-footer">
                 <div class="flex">
                     <div class="btn-social">
-                        <a href="https://www.instagram.com/joao_pedro_toledo_martins/"  target="_blank"><button><i class="bi bi-instagram"></i></button></a>
-                        <a href="https://chat.whatsapp.com/HEma9p2yeiJCgocH8jDAKy"><button><i class="bi bi-whatsapp" target="_blank"></i></button></a>
-                        <a href="mailto:matematicamaiscefet@gmail.com" target="_blank"><button><i class="bi bi-envelope"></i></button></a>
+                        <a class="link-social" href="https://www.instagram.com/joao_pedro_toledo_martins/" target="_blank"><button class="link-insta"><i class="bi bi-instagram"></i></button></a>
+                        <a class="link-social" href="https://chat.whatsapp.com/HEma9p2yeiJCgocH8jDAKy"><button class="link-zap"><i class="bi bi-whatsapp" target="_blank"></i></button></a>
+                        <a class="link-social" href="mailto:matematicamaiscefet@gmail.com" target="_blank"><button class="link-email"><i class="bi bi-envelope"></i></button></a>
                     </div>
                 </div>
             </div>
