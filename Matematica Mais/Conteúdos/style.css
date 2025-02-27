@@ -1,0 +1,8 @@
+@media screen and (max-width: 1020px){    
+    header .btn-contato{
+        padding: 5px 20px;
+        font-size: 12px;
+        display: flex;
+        margin: auto;
+    }
+}
