@@ -5,17 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
-    <title>Calculadora</title>
+    <link rel="shortcut icon" href="./calculadora.png">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Calculadora — Matemática Mais</title>
 </head>
 <body>
+    <header>
+        <div class="interface">
+            <h1 class="titulo">Calculadora da Matemática Mais</h1>
+            <div class="btn-contato btnVoltar">
+                <a href="../index.html">
+                    <button class="btn-pulsante">Voltar à página principal</button>
+                </a>
+            </div>
+        </div>
+    </header>
     <table class="calculadora">
         <tr class="linhas">
-            <td class="ultimaOperacao"><div>Último operação:</div></td>
+            <td class="ultimaOperacao"><div>Última operação:</div></td>
             <td colspan="3" class="caixaOperador"><div id="caixaOperador"></div></td>
         </tr>
         <tr class="linhas">
-            <td colspan="4">
-                <div class="display" id="display"></div></td>
+            <td colspan="4"><div class="display" id="display"></div></td>
         </tr>
         <div class="btn-calculadora">
             <tr class="linhas">
@@ -50,5 +63,22 @@
             </tr>
         </div>
     </table>
+    
+    <footer>
+        <div class="interface">
+            <div class="line-footer">
+                <div class="flex">
+                    <div class="btn-social">
+                        <a class="link-social" href="https://www.instagram.com/joao_pedro_toledo_martins/" target="_blank"><button class="link-insta"><i class="bi bi-instagram"></i></button></a>
+                        <a class="link-social" href="https://chat.whatsapp.com/HEma9p2yeiJCgocH8jDAKy"><button class="link-zap"><i class="bi bi-whatsapp" target="_blank"></i></button></a>
+                        <a class="link-social" href="mailto:matematicamaiscefet@gmail.com" target="_blank"><button class="link-email"><i class="bi bi-envelope"></i></button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="line-footer borda">
+                <p>Feito por João Pedro Toledo Martins <span>Inspirado em Bruno Rodrigues • Inteliogia</span></p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

@@ -1,4 +1,4 @@
-// DECLARÇÃO DE VARIÁVEIS
+// DECLARAÇÃO DE VARIÁVEIS
 const display = document.getElementById('display');
 const numeros = document.querySelectorAll('[id*=num]');
 const operacoes = document.querySelectorAll('[id*=operacao]');
@@ -10,12 +10,13 @@ const maisMenos = document.getElementById('maisMenos');
 const virgula = document.getElementById('virgula');
 const caixaOperador = document.getElementById('caixaOperador');
 
-let xablau = "Xablau";
 
 let numeroNovo = true;
 let operador;
 let numeroAnterior;
 
+
+// FUNÇÕES
 function atualizarDisplay(numero){
     if(numeroNovo){
         display.textContent = numero.toLocaleString('BR');
@@ -56,12 +57,9 @@ function calcular(){
     }
 }
 
-
 function inserirNumero(evento){
     atualizarDisplay(evento.target.textContent); //Donde o número foi clicado, pegue o seu conteúdo, ou seja, o próprio número, e atualize o display
 }
-
-
 
 function selecionarOperacao(evento){
     if(!numeroNovo){
@@ -74,17 +72,10 @@ function selecionarOperacao(evento){
     }
 }
 
-numeros.forEach(numero => numero.addEventListener('click', inserirNumero));//Ao clicar em algum local dos botões dos números, inseriremos o número
-
-operacoes.forEach(operacao => operacao.addEventListener('click', selecionarOperacao));
-
 function ativarIgual(){
     calcular();
     operador = undefined;
 }
-
-igual.addEventListener('click', ativarIgual);
-
 
 function limparDisplay(){
     display.textContent = "";
@@ -142,13 +133,24 @@ function andarComVirgula(){
  
 }
 
+// EVENTOS
+numeros.forEach(numero => numero.addEventListener('click', inserirNumero));//Ao clicar em algum local dos botões dos números, inseriremos o número
+
+operacoes.forEach(operacao => operacao.addEventListener('click', selecionarOperacao));
+
+igual.addEventListener('click', ativarIgual);
+
 apagarDisplay.addEventListener('click',limparDisplay);
+
 apagarTudo.addEventListener('click',limparCalculo);
+
 voltar.addEventListener('click', removerUltimoNumero);
+
 maisMenos.addEventListener('click', inverterSinal);
+
 virgula.addEventListener('click', andarComVirgula);
 
-
+// TECLADO
 const mapaTeclado = {
     '0' : 'num0',
     '1' : 'num1',
@@ -172,8 +174,6 @@ const mapaTeclado = {
     'Escape' : 'apagarTudo'
 }
 
-
-
 function teclaPermitida(tecla){
     if(Object.keys(mapaTeclado).indexOf(tecla) != -1){
         return true;
@@ -193,3 +193,23 @@ function mapearTeclado(evento){
 }
 
 document.addEventListener('keydown', mapearTeclado);
+
+// SCROOL REVEAL
+window.revelar = ScrollReveal({reset:false});
+
+revelar.reveal('.titulo',
+{
+    duration: 1000
+});
+
+revelar.reveal('.btnVoltar',
+{
+    duration: 1000,
+    delay: 500
+});
+
+revelar.reveal('.calculadora',
+{
+    duration: 1000,
+    delay: 1000
+});

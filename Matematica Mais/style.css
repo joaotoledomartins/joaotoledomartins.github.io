@@ -1,5 +1,5 @@
 
-/*ESTILO GERAL*/
+/* ESTILO GERAL */
 
 *{
     margin: 0;
@@ -160,9 +160,6 @@ button:hover, form .btn-enviar input:hover{
     color: #fff;
     transform: scale(1.2);
 }
-
-
-
 
 .link-insta{
     color:magenta;
@@ -698,7 +695,7 @@ footer .line-footer p span{
     }
 }
 
-/* Media Queries — Responsividade */
+/* MEDIA QUERIES — RESPONSIVIDADE */
 @media screen and (max-width: 1020px){
     /* CLASSES GERAIS */
     
