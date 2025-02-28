@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Calculadora</title>
+</head>
+<body>
+    <table class="calculadora">
+        <tr class="linhas">
+            <td class="ultimaOperacao"><div>Último operação:</div></td>
+            <td colspan="3" class="caixaOperador"><div id="caixaOperador"></div></td>
+        </tr>
+        <tr class="linhas">
+            <td colspan="4">
+                <div class="display" id="display"></div></td>
+        </tr>
+        <div class="btn-calculadora">
+            <tr class="linhas">
+                <td><button id="apagarDisplay">CE</button></td>
+                <td><button id="apagarTudo">C</button></td>
+                <td><button id="voltar"><<</button></td>
+                <td><button id="operacaoDivisao">÷</button></td>
+            </tr>
+            <tr class="linhas">
+                <td><button id="num7">7</button></td>
+                <td><button id="num8">8</button></td>
+                <td><button id="num9">9</button></td>
+                <td><button id="operacaoMultiplicacao">×</button></td>
+            </tr>
+            <tr class="linhas">
+                <td><button id="num4">4</button></td>
+                <td><button id="num5">5</button></td>
+                <td><button id="num6">6</button></td>
+                <td><button id="operacaoSubtracao">-</button></td>
+            </tr>
+            <tr class="linhas">
+                <td><button id="num1">1</button></td>
+                <td><button id="num2">2</button></td>
+                <td><button id="num3">3</button></td>
+                <td><button id="operacaoAdicao">+</button></td>
+            </tr>
+            <tr class="linhas">
+                <td><button id="maisMenos">±</button></td>
+                <td><button id="num0">0</button></td>
+                <td><button id="virgula">,</button></td>
+                <td><button id="igual">=</button></td>
+            </tr>
+        </div>
+    </table>
+</body>
+</html>
