@@ -17,11 +17,7 @@ body{
 }
 
 .calculadora, .ultimaOperacao, .caixaOperador, 
-#linhaDisplay, #linhaApagarDisplay, #apagarDisplay, #linhaApagarTudo, #apagarTudo, #linhaVoltar, #voltar, #linhaOperacaoDivisao, #operacaoDivisao, #linhaNum7, #num7, #linhaNum8, #num8, #linhaNum9, #num9, #linhaOperacaoMultiplicacao, #operacaoMultiplicacao, #linhaNum4, #num4, #linhaNum5, #num5, #linhaNum6, #num6, #linhaOperacaoSubtracao, #operacaoSubtracao, #linhaNum1, #num1, #linhaNum2, #num2, #linhaNum3, #num3, #linhaOperacaoAdicao, #operacaoAdicao, #linhaMaisMenos, #maisMenos, #linhaNum0, #num0, #linhaVirgula, #virgula, #linhaIgual, #igual, 
-#linhaOperacaoRaizQuadrada, #operacaoRaizQuadrada, #linhaOperacaoAoQuadrado,
- #operacaoAoQuadrado, 
-#linhaOperacaoSin, #operacaoSin, #linhaOperacaoCos, #operacaoCos, #linhaOperacaoTan, 
-#operacaoTan{
+#linhaDisplay, #linhaApagarDisplay, #apagarDisplay, #linhaApagarTudo, #apagarTudo, #linhaVoltar, #voltar, #linhaOperacaoDivisao, #operacaoDivisao, #linhaNum7, #num7, #linhaNum8, #num8, #linhaNum9, #num9, #linhaOperacaoMultiplicacao, #operacaoMultiplicacao, #linhaNum4, #num4, #linhaNum5, #num5, #linhaNum6, #num6, #linhaOperacaoSubtracao, #operacaoSubtracao, #linhaNum1, #num1, #linhaNum2, #num2, #linhaNum3, #num3, #linhaOperacaoAdicao, #operacaoAdicao, #linhaMaisMenos, #maisMenos, #linhaNum0, #num0, #linhaVirgula, #virgula, #linhaIgual, #igual, #linhaOperacaoRaizQuadrada, #operacaoRaizQuadrada, #linhaOperacaoAoQuadrado, #operacaoAoQuadrado, #linhaOperacaoSin, #operacaoSin, #linhaOperacaoCos, #operacaoCos, #linhaOperacaoTan, #operacaoTan{
     visibility: hidden;
 }
 

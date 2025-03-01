@@ -298,7 +298,6 @@ revelar.reveal('#voltar',
     delay: 1500
 });
 
-
 revelar.reveal('#linhaOperacaoDivisao',
 {
     duration: 1000,
