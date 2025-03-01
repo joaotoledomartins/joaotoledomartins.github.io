@@ -237,6 +237,19 @@ button:hover, form .btn-enviar input:hover{
     background-color: #0e5744be;
 }
 
+h1::first-letter{
+    font-size: 60px;
+}
+h2::first-letter{
+    font-size: 56px;
+}
+h3::first-letter{
+    font-size: 46;
+}
+p::first-letter{
+    font-size: 25px;
+}
+
 /* ESTILO DO CABEÇALHO */
 header{
     padding: 40px 4%;

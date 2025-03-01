@@ -16,7 +16,8 @@ body{
     height: 100vh;
 }
 
-.calculadora, .titulo, .btnVoltar{
+.calculadora, .ultimaOperacao, .caixaOperador, 
+#linhaDisplay, #linhaApagarDisplay, #apagarDisplay, #linhaApagarTudo, #apagarTudo, #linhaVoltar, #voltar, #linhaOperacaoDivisao, #operacaoDivisao, #linhaNum7, #num7, #linhaNum8, #num8, #linhaNum9, #num9, #linhaOperacaoMultiplicacao, #operacaoMultiplicacao, #linhaNum4, #num4, #linhaNum5, #num5, #linhaNum6, #num6, #linhaOperacaoSubtracao, #operacaoSubtracao, #linhaNum1, #num1, #linhaNum2, #num2, #linhaNum3, #num3, #linhaOperacaoAdicao, #operacaoAdicao, #ultimoBtnMaisMenos, #maisMenos, #linhaNum0, #num0, #linhaVirgula, #virgula, #ultimoBtnIgual, #igual{
     visibility: hidden;
 }
 
@@ -158,6 +159,19 @@ body{
     background-color: #0e5744be;
 }
 
+h1::first-letter{
+    font-size: 60px;
+}
+h2::first-letter{
+    font-size: 56px;
+}
+h3::first-letter{
+    font-size: 46;
+}
+p::first-letter{
+    font-size: 25px;
+}
+
 /* CABEÇALHO */
 
 header{
@@ -191,29 +205,21 @@ header > .interface{
 /* CALCULADORA */
 
 .calculadora{
-    border: 1px solid black;
     max-width: 400px;
     width: 400px;
     height: 480px;
     margin: auto;
     margin-top: 50px;
+    background-color: #feda77;
+    border-radius: 30px;
 }
 
 td{
-    border: 1px solid black;
+    border: 3px ridge rgb(242, 175, 19);
     text-align: center;
     font-size: 20px;
-    width: 50px;
-    height: 80px;
-}
-td button{
-    width: 100%;
-    height: 100%;
-    border: none;
-}
-
-td button:active{
-    background-color: rgb(173, 173, 173);
+    width: 25%;
+    height: 40px;
 }
 
 .display{
@@ -222,16 +228,45 @@ td button:active{
 
 .caixaOperador{
     height: 30px;
+    font-size: 20px;
+    border-radius: 0 30px 0 0;
 }
 
 .ultimaOperacao{
     font-size: 15px;
+    border-radius: 30px 0 0 0;
+}
+
+#ultimoBtnMaisMenos{
+    border-radius: 0 0 0 30px;
+}
+
+#ultimoBtnIgual{
+    border-radius: 0 0 30px 0;
+}
+
+td button{
+    width: 80%;
+    height: 80%;
+    border: none;
+    font-size: 15px;
+    box-shadow: 0 5px 2px #9c7501;
+    margin: auto;
+    margin-bottom: 5px;
+    border-radius: 15px;
+    background-color: #f2c43b;
+}
+
+td button:active{
+    background-color: #ebb41f;
+    transform: translateY(5px);
+    box-shadow: none;
 }
 
 /* ESTILO DO RODAPÉ */
 
 footer{
-    margin-top: 20px;
+    margin-top: 50px;
     padding: 20px 4%;
     box-shadow: 0 0 40px 10px #aad69d1d;
     background-color: #242424;
@@ -299,6 +334,17 @@ footer .line-footer p span{
     /* CLASSES GERAIS */
     .flex{
         flex-direction: column;
+    }
+
+    /* CABEÇALHO */
+
+    .titulo{
+        font-size: 25px;
+        text-align: center;
+    }
+
+    h1::first-letter{
+        font-size: 35px;
     }
 
     /* RODAPÉ */

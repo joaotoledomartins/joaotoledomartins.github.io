@@ -197,19 +197,355 @@ document.addEventListener('keydown', mapearTeclado);
 // SCROOL REVEAL
 window.revelar = ScrollReveal({reset:false});
 
-revelar.reveal('.titulo',
-{
-    duration: 1000
-});
-
-revelar.reveal('.btnVoltar',
-{
-    duration: 1000,
-    delay: 500
-});
-
 revelar.reveal('.calculadora',
 {
     duration: 1000,
+    origin: 'bottom',
+    distance: '90px',
+    delay: 200
+});
+
+revelar.reveal('.ultimaOperacao',
+{
+    duration: 1000,
+    origin: 'bottom',
+    distance: '90px',
+    delay: 250
+});
+
+revelar.reveal('.caixaOperador',
+{
+    duration: 1000,
+    origin: 'bottom',
+    distance: '90px',
+    delay: 500
+
+});
+
+revelar.reveal('#linhaDisplay',
+{
+    duration: 1000,
+    origin: 'bottom',
+    distance: '90px',
+    delay: 750
+});
+
+revelar.reveal('#linhaApagarDisplay',
+{
+    duration: 1000,
+    origin: 'bottom',
+    distance: '90px',
+    delay: 950
+});
+
+revelar.reveal('#apagarDisplay',
+{
+    duration: 1000,
+    origin: 'bottom',
+    distance: '90px',
     delay: 1000
+});
+
+revelar.reveal('#linhaApagarTudo',
+{
+    duration: 1000,
+    origin: 'bottom',
+    distance: '90px',
+    delay: 1200
+});
+
+revelar.reveal('#apagarTudo',
+{
+    duration: 1000,
+    origin: 'bottom',
+    distance: '90px',
+    delay: 1250
+});
+
+revelar.reveal('#linhaVoltar',
+{
+    duration: 1000,
+    origin: 'bottom',
+    distance: '90px',
+    delay: 1450
+});
+
+revelar.reveal('#voltar',
+{
+    duration: 1000,
+    origin: 'bottom',
+    distance: '90px',
+    delay: 1500
+});
+
+revelar.reveal('#linhaOperacaoDivisao',
+{
+    duration: 1000,
+    origin: 'bottom',
+    distance: '90px',
+    delay: 1700
+});
+
+revelar.reveal('#operacaoDivisao',
+{
+    duration: 1000,
+    origin: 'bottom',
+    distance: '90px',
+    delay: 1750
+});
+
+revelar.reveal('#linhaNum7',
+{
+    duration: 1000,
+    origin: 'bottom',
+    distance: '90px',
+    delay: 1950
+});
+
+revelar.reveal('#num7',
+{
+    duration: 1000,
+    origin: 'bottom',
+    distance: '90px',
+    delay: 2000
+});
+
+revelar.reveal('#linhaNum8',
+{
+    duration: 1000,
+    origin: 'bottom',
+    distance: '90px',
+    delay: 2200
+});
+
+revelar.reveal('#num8',
+{
+    duration: 1000,
+    origin: 'bottom',
+    distance: '90px',
+    delay: 2250
+});
+
+revelar.reveal('#linhaNum9',
+{
+    duration: 1000,
+    origin: 'bottom',
+    distance: '90px',
+    delay: 2450
+});
+
+revelar.reveal('#num9',
+{
+    duration: 1000,
+    origin: 'bottom',
+    distance: '90px',
+    delay: 2500
+});
+
+revelar.reveal('#linhaOperacaoMultiplicacao',
+{
+    duration: 1000,
+    origin: 'bottom',
+    distance: '90px',
+    delay: 2700
+});
+
+revelar.reveal('#operacaoMultiplicacao',
+{
+    duration: 1000,
+    origin: 'bottom',
+    distance: '90px',
+    delay: 2750
+});
+
+revelar.reveal('#linhaNum4',
+{
+    duration: 1000,
+    origin: 'bottom',
+    distance: '90px',
+    delay: 2950
+});
+
+revelar.reveal('#num4',
+{
+    duration: 1000,
+    origin: 'bottom',
+    distance: '90px',
+    delay: 3000
+});
+
+revelar.reveal('#linhaNum5',
+{
+    duration: 1000,
+    origin: 'bottom',
+    distance: '90px',
+    delay: 3200
+});
+
+revelar.reveal('#num5',
+{
+    duration: 1000,
+    origin: 'bottom',
+    distance: '90px',
+    delay: 3250
+});
+
+revelar.reveal('#linhaNum6',
+{
+    duration: 1000,
+    origin: 'bottom',
+    distance: '90px',
+    delay: 3450
+});
+
+revelar.reveal('#num6',
+{
+    duration: 1000,
+    origin: 'bottom',
+    distance: '90px',
+    delay: 3500
+});
+
+revelar.reveal('#linhaOperacaoSubtracao',
+{
+    duration: 1000,
+    origin: 'bottom',
+    distance: '90px',
+    delay: 3700
+});
+
+revelar.reveal('#operacaoSubtracao',
+{
+    duration: 1000,
+    origin: 'bottom',
+    distance: '90px',
+    delay: 3750
+});
+
+revelar.reveal('#linhaNum1',
+{
+    duration: 1000,
+    origin: 'bottom',
+    distance: '90px',
+    delay: 3950
+});
+
+revelar.reveal('#num1',
+{
+    duration: 1000,
+    origin: 'bottom',
+    distance: '90px',
+    delay: 4000
+});
+
+revelar.reveal('#linhaNum2',
+{
+    duration: 1000,
+    origin: 'bottom',
+    distance: '90px',
+    delay: 4200
+});
+
+revelar.reveal('#num2',
+{
+    duration: 1000,
+    origin: 'bottom',
+    distance: '90px',
+    delay: 4250
+});
+
+revelar.reveal('#linhaNum3',
+{
+    duration: 1000,
+    origin: 'bottom',
+    distance: '90px',
+    delay: 4450
+});
+
+revelar.reveal('#num3',
+{
+    duration: 1000,
+    origin: 'bottom',
+    distance: '90px',
+    delay: 4500
+});
+
+revelar.reveal('#linhaOperacaoAdicao',
+{
+    duration: 1000,
+    origin: 'bottom',
+    distance: '90px',
+    delay: 4700
+});
+
+revelar.reveal('#operacaoAdicao',
+{
+    duration: 1000,
+    origin: 'bottom',
+    distance: '90px',
+    delay: 4750
+});
+
+revelar.reveal('#ultimoBtnMaisMenos',
+{
+    duration: 1000,
+    origin: 'bottom',
+    distance: '90px',
+    delay: 4950
+});
+
+revelar.reveal('#maisMenos',
+{
+    duration: 1000,
+    origin: 'bottom',
+    distance: '90px',
+    delay: 5000
+});
+
+revelar.reveal('#linhaNum0',
+{
+    duration: 1000,
+    origin: 'bottom',
+    distance: '90px',
+    delay: 5200
+});
+
+revelar.reveal('#num0',
+{
+    duration: 1000,
+    origin: 'bottom',
+    distance: '90px',
+    delay: 5250
+});
+
+revelar.reveal('#linhaVirgula',
+{
+    duration: 1000,
+    origin: 'bottom',
+    distance: '90px',
+    delay: 5450
+});
+
+revelar.reveal('#virgula',
+{
+    duration: 1000,
+    origin: 'bottom',
+    distance: '90px',
+    delay: 5500
+});
+
+revelar.reveal('#ultimoBtnIgual',
+{
+    duration: 1000,
+    origin: 'bottom',
+    distance: '90px',
+    delay: 5700
+});
+
+revelar.reveal('#igual',
+{
+    duration: 1000,
+    origin: 'bottom',
+    distance: '90px',
+    delay: 5750
 });
