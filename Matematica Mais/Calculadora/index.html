@@ -22,51 +22,49 @@
             </div>
         </div>
     </header>
-    <div class="interface">
-        <table class="calculadora">
+    <table class="calculadora">
+        <tr class="linhas">
+            <td class="ultimaOperacao"><div>Última operação:</div></td>
+            <td colspan="3" class="caixaOperador"><div id="caixaOperador"></div></td>
+        </tr>
+        <tr class="linhas">
+            <td id="linhaDisplay" colspan="4"><div class="display" id="display"></div></td>
+        </tr>
+        <div class="btn-calculadora">
             <tr class="linhas">
-                <td class="ultimaOperacao"><div>Última operação:</div></td>
-                <td colspan="3" class="caixaOperador"><div id="caixaOperador"></div></td>
+                <td id="linhaApagarDisplay"><button id="apagarDisplay">CE</button></td>
+                <td id="linhaApagarTudo"><button id="apagarTudo">C</button></td>
+                <td id="linhaVoltar"><button id="voltar"><<</button></td>
+                <td id="linhaOperacaoDivisao"><button id="operacaoDivisao">÷</button></td>
             </tr>
             <tr class="linhas">
-                <td id="linhaDisplay" colspan="4"><div class="display" id="display"></div></td>
+                <td id="linhaNum7"><button id="num7">7</button></td>
+                <td id="linhaNum8"><button id="num8">8</button></td>
+                <td id="linhaNum9"><button id="num9">9</button></td>
+                <td id="linhaOperacaoMultiplicacao"><button id="operacaoMultiplicacao">×</button></td>
             </tr>
-            <div class="btn-calculadora">
-                <tr class="linhas">
-                    <td id="linhaApagarDisplay"><button id="apagarDisplay">CE</button></td>
-                    <td id="linhaApagarTudo"><button id="apagarTudo">C</button></td>
-                    <td id="linhaVoltar"><button id="voltar"><<</button></td>
-                    <td id="linhaOperacaoDivisao"><button id="operacaoDivisao">÷</button></td>
-                </tr>
-                <tr class="linhas">
-                    <td id="linhaNum7"><button id="num7">7</button></td>
-                    <td id="linhaNum8"><button id="num8">8</button></td>
-                    <td id="linhaNum9"><button id="num9">9</button></td>
-                    <td id="linhaOperacaoMultiplicacao"><button id="operacaoMultiplicacao">×</button></td>
-                </tr>
-                <tr class="linhas">
-                    <td id="linhaNum4"><button id="num4">4</button></td>
-                    <td id="linhaNum5"><button id="num5">5</button></td>
-                    <td id="linhaNum6"><button id="num6">6</button></td>
-                    <td id="linhaOperacaoSubtracao"><button id="operacaoSubtracao">-</button></td>
-                </tr>
-                <tr class="linhas">
-                    <td id="linhaNum1"><button id="num1">1</button></td>
-                    <td id="linhaNum2"><button id="num2">2</button></td>
-                    <td id="linhaNum3"><button id="num3">3</button></td>
-                    <td id="linhaOperacaoAdicao"><button id="operacaoAdicao">+</button></td>
-                </tr>
-                <tr class="linhas">
-                    <div id="ultimaLinha">
-                        <td id="ultimoBtnMaisMenos"><button id="maisMenos">±</button></td>
-                        <td id="linhaNum0"><button id="num0">0</button></td>
-                        <td id="linhaVirgula"><button id="virgula">,</button></td>
-                        <td id="ultimoBtnIgual"><button id="igual">=</button></td>
-                    </div>
-                </tr>
-            </div>
-        </table>
-    </div>
+            <tr class="linhas">
+                <td id="linhaNum4"><button id="num4">4</button></td>
+                <td id="linhaNum5"><button id="num5">5</button></td>
+                <td id="linhaNum6"><button id="num6">6</button></td>
+                <td id="linhaOperacaoSubtracao"><button id="operacaoSubtracao">-</button></td>
+            </tr>
+            <tr class="linhas">
+                <td id="linhaNum1"><button id="num1">1</button></td>
+                <td id="linhaNum2"><button id="num2">2</button></td>
+                <td id="linhaNum3"><button id="num3">3</button></td>
+                <td id="linhaOperacaoAdicao"><button id="operacaoAdicao">+</button></td>
+            </tr>
+            <tr class="linhas">
+                <div id="ultimaLinha">
+                    <td id="ultimoBtnMaisMenos"><button id="maisMenos">±</button></td>
+                    <td id="linhaNum0"><button id="num0">0</button></td>
+                    <td id="linhaVirgula"><button id="virgula">,</button></td>
+                    <td id="ultimoBtnIgual"><button id="igual">=</button></td>
+                </div>
+            </tr>
+        </div>
+    </table>
     <footer>
         <div class="interface">
             <div class="line-footer">
