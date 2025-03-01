@@ -17,7 +17,11 @@ body{
 }
 
 .calculadora, .ultimaOperacao, .caixaOperador, 
-#linhaDisplay, #linhaApagarDisplay, #apagarDisplay, #linhaApagarTudo, #apagarTudo, #linhaVoltar, #voltar, #linhaOperacaoDivisao, #operacaoDivisao, #linhaNum7, #num7, #linhaNum8, #num8, #linhaNum9, #num9, #linhaOperacaoMultiplicacao, #operacaoMultiplicacao, #linhaNum4, #num4, #linhaNum5, #num5, #linhaNum6, #num6, #linhaOperacaoSubtracao, #operacaoSubtracao, #linhaNum1, #num1, #linhaNum2, #num2, #linhaNum3, #num3, #linhaOperacaoAdicao, #operacaoAdicao, #ultimoBtnMaisMenos, #maisMenos, #linhaNum0, #num0, #linhaVirgula, #virgula, #ultimoBtnIgual, #igual{
+#linhaDisplay, #linhaApagarDisplay, #apagarDisplay, #linhaApagarTudo, #apagarTudo, #linhaVoltar, #voltar, #linhaOperacaoDivisao, #operacaoDivisao, #linhaNum7, #num7, #linhaNum8, #num8, #linhaNum9, #num9, #linhaOperacaoMultiplicacao, #operacaoMultiplicacao, #linhaNum4, #num4, #linhaNum5, #num5, #linhaNum6, #num6, #linhaOperacaoSubtracao, #operacaoSubtracao, #linhaNum1, #num1, #linhaNum2, #num2, #linhaNum3, #num3, #linhaOperacaoAdicao, #operacaoAdicao, #linhaMaisMenos, #maisMenos, #linhaNum0, #num0, #linhaVirgula, #virgula, #linhaIgual, #igual, 
+#linhaOperacaoRaizQuadrada, #operacaoRaizQuadrada, #linhaOperacaoAoQuadrado,
+ #operacaoAoQuadrado, 
+#linhaOperacaoSin, #operacaoSin, #linhaOperacaoCos, #operacaoCos, #linhaOperacaoTan, 
+#operacaoTan{
     visibility: hidden;
 }
 
@@ -218,7 +222,7 @@ td{
     border: 3px ridge rgb(242, 175, 19);
     text-align: center;
     font-size: 20px;
-    width: 25%;
+    width: 20%;
     height: 40px;
 }
 
@@ -237,11 +241,11 @@ td{
     border-radius: 30px 0 0 0;
 }
 
-#ultimoBtnMaisMenos{
+.ultimoRight{
     border-radius: 0 0 0 30px;
 }
 
-#ultimoBtnIgual{
+.ultimoLeft{
     border-radius: 0 0 30px 0;
 }
 
