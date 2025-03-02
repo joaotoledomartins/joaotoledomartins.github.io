@@ -171,6 +171,11 @@ p::first-letter{
     font-size: 25px;
 }
 
+.btn-enviar input:hover{
+    box-shadow: 0px 0px 8px #AAD69D;
+    transform: scale(1.05);
+}
+
 /* CABEÇALHO */
 
 header{
@@ -203,20 +208,77 @@ header > .interface{
 
 /* INFORMAÇÕES */
 
-.informacoes{
-   text-align: center;
-   margin-top: 40px;
+.tudo{
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
-legend{
-    text-align: left;
+.informacoes{
+    width: 50%;
+    margin: 40px;
+    padding: 20px;
+    text-align: center;
+}
+
+.respostas{
+    width: 50%;
+    margin: 40px;
+    padding: 20px;
+}
+
+.conjunto{
+    justify-content: center;
+}   
+
+
+.txt-resp::first-letter{
+    font-size: 20px;
+}
+
+.txt-resp{
+    font-size: 20px;
+    margin: 15px;
+    text-align: center;
+    color: #fff;
+    margin: 40px 0px;
+}
+
+.label{
+    color: #7EFF86;
     font-size: 20px;
 }
 
 fieldset{
-    height: 500px;
+    height: 100%;
+    display: flex;
+    border: none;
 }
 
+.btn-enviar{
+    margin-top: 20px;
+    animation: requebrar 4s ease-in-out infinite;
+}
+
+input, select{
+    margin-top: 10px;
+    width: 80%;
+    background-color: #242424;
+    border: none;
+    outline: none;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 18px;
+}
+
+.btn-enviar input{
+    width: 120px;
+    background-color: #AAD69D;
+    color: #000;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+}
 
 
 /* ESTILO DO RODAPÉ */
@@ -282,6 +344,16 @@ footer .line-footer p span{
     100%{
         left: 0;
         top: 0;
+    }
+}
+
+@keyframes requebrar{
+    0%,
+    100%{
+        transform: translateY(-2px) rotate(-2deg);
+    }
+    50%{
+        transform: translateY(2px) rotate(2deg);
     }
 }
 

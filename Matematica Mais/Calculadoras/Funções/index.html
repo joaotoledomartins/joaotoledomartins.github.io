@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <script src="./script.jss" defer></script>
+    <script src="./script.js" defer></script>
     <link rel="shortcut icon" href="./função.png">
     <script src="https://unpkg.com/scrollreveal"></script>
     <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -14,7 +14,7 @@
 <body>
     <header>
         <div class="interface">
-            <h1 class="titulo">Calculadora da Matemática Mais</h1>
+            <h1 class="titulo">Calculadora de Funções</h1>
             <div class="btn-contato btnVoltar">
                 <a href="../index.html#conteudos">
                     <button class="btn-pulsante">Voltar à página principal</button>
@@ -24,14 +24,40 @@
     </header>
     <main>
         <div class="interface">
-            <div class="informacoes">
+            <div class="tudo">
                 <fieldset>
-                    <legend>Calculadora de Funções Afins e Quadráticas</legend>
-                    <input type="checkbox" name="quadratica" id="quadratica">
-                    <label for="quadratica">Quadrática</label>
-                    <br/>
-                    <input type="checkbox" name="afim" id="afim">
-                    <label for="afim">Afim</label>
+                    <div class="informacoes">
+                        <div class="conjunto">
+                            <label class="label" for="tipo">Tipo da função:</label>
+                            <select name="tipo" id="tipo" onchange="definirFuncao(this)">
+                                <option value="afim" selected>Afim</option>
+                                <option value="quadratica">Quadrática</option>
+                            </select>
+                        </div>
+                        <br/>
+                        <div class="conjunto">
+                            <label class="label" for="funcao">Digite a função:</label>
+                            <br/>
+                            <input type="text" name="funcao" id="funcao" placeholder="Ex.: f(x) = x - 5">
+                        </div>
+                        <br/>
+                        <div class="conjunto">
+                            <label class="label" for="coeficienteA">Digite o coeficiente a:</label>
+                            <br/>
+                            <input type="number" name="coeficienteA" id="coeficienteA" placeholder="Ex.: 1">
+                        </div>
+                        <br/>
+                        <div class="conjunto">
+                            <label class="label" for="coeficienteB">Digite o coeficiente b:</label>
+                            <br/>
+                            <input type="number" name="coeficienteB" id="coeficienteB" placeholder="Ex.: -5">
+                        </div>
+                        <br/>
+                        <div class="conjunto" id="CaixaCoeficienteC"></div>
+                        <br/>
+                        <div class="btn-enviar"><input type="submit" value="Enviar" id="enviar"></div>
+                    </div>
+                    <div class="respostas" id="resp"></div>
                 </fieldset>
             </div>
         </div>

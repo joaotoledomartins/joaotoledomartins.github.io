@@ -256,6 +256,9 @@ const mapaTeclado = {
     'Enter' : 'igual',
     '=' : 'igual',
     ',' : 'virgula',
+    '%' : 'operacaoPorcentagem',
+    '²' : 'operacaoAoQuadrado',
+    '³' : 'operacaoAoCubo',
     'Backspace' : 'voltar',
     'c' : 'apagarDisplay',
     'Escape' : 'apagarTudo'
@@ -273,7 +276,7 @@ function teclaPermitida(tecla){
 
 function mapearTeclado(evento){
     tecla = evento.key;
-    //console.log(tecla);
+    console.log(tecla);
     if(teclaPermitida(tecla)){
         document.getElementById(mapaTeclado[tecla]).click();
     }
