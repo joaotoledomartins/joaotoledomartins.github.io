@@ -1,0 +1,315 @@
+/* ESTILO GERAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #1C4439;
+    height: 100vh;
+}
+
+/*{
+    visibility: hidden;
+}*/
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+
+.btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #AAD69D;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.btn-contato button:hover, footer button:hover{
+    box-shadow: 0px 0px 8px #AAD69D;
+    transform: scale(1.05);
+}
+
+.btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #aad69d;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+}
+
+.link-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.link-social button::before{
+    content: "";
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    position: absolute;
+    left: -40px;
+    top: 85%;
+    z-index: -1;
+}
+
+.link-social button:hover::before{
+    animation: deslocar .5s;
+    left: 0;
+    top: 0;
+}
+
+.link-social i{
+    transition: .2s;
+}
+
+.link-social:hover i{
+    color: #fff;
+    transform: scale(1.2);
+}
+
+.link-insta{
+    color:magenta;
+}
+
+.link-zap{
+    color:#3cff00;
+}
+
+.link-email{
+    color:#0000ff;
+}
+
+.link-insta::before{
+    background-image: linear-gradient(225deg, #515bd4, #8134af, #dd2a7b, #feda77, #f58529);
+}
+
+.link-zap::before{
+    background-image: linear-gradient(225deg, #176c17, #1fa61f, #4dd14d, #87e987);
+}
+
+.link-email::before{
+    background-image: linear-gradient(225deg, #0000ff, #3535f7, #1177de, #65a1e6, #95BFEE, #AECDF2);
+}
+
+.btn-pulsante{
+    position: relative;
+    font-family: "MuseoModerno", serif;
+}
+
+.btn-pulsante::before, .btn-pulsante::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #AAD69D;
+    z-index: -1;
+    border-radius: 30px;
+    opacity: 0.7;
+}
+
+.btn-pulsante:hover::before{
+    animation: pulsar 1s ease-in-out infinite;
+}
+
+.btn-pulsante:hover::after{
+    animation: pulsar 1s 1s ease-in-out infinite;
+}
+
+::-webkit-scrollbar{/*Trilho*/
+    width: 20px;
+}
+
+::-webkit-scrollbar-thumb{/*Scrollbar*/
+    background-color: #7eff86;
+}
+
+::-webkit-scrollbar-track{/*Cor do trilho*/
+    background-color: #0E5743;
+}
+
+::-webkit-scrollbar-button{
+    background-color: #0e5744be;
+}
+
+h1::first-letter{
+    font-size: 60px;
+}
+h2::first-letter{
+    font-size: 56px;
+}
+h3::first-letter{
+    font-size: 46;
+}
+p::first-letter{
+    font-size: 25px;
+}
+
+/* CABEÇALHO */
+
+header{
+    padding: 40px 4%;
+    background-color: #242424;
+    border-radius: 0 0 10% 10%;
+    font-family: "MuseoModerno", serif;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.titulo{
+    color: #7EFF86;
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 40px;
+    background-image: linear-gradient(45deg, #2bcc15, #19e912, #61ff5f, #19e912, #2bcc15);
+    background-size: 400% 100%;
+    animation: degrade 10s ease-in-out infinite alternate;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* INFORMAÇÕES */
+
+.informacoes{
+   text-align: center;
+   margin-top: 40px;
+}
+
+legend{
+    text-align: left;
+    font-size: 20px;
+}
+
+fieldset{
+    height: 500px;
+}
+
+
+
+/* ESTILO DO RODAPÉ */
+
+footer{
+    margin-top: 50px;
+    padding: 20px 4%;
+    box-shadow: 0 0 40px 10px #aad69d1d;
+    background-color: #242424;
+    border-radius: 10% 10% 0 0;
+    font-family: "MuseoModerno", serif;
+}
+
+footer .flex{
+    justify-content: center;
+}
+
+footer .line-footer{
+    padding: 20px 0;
+}
+
+.borda{
+    border-bottom: 2px solid #AAD69D;
+}
+
+footer .line-footer p{
+    color: #7eff86;
+    text-align: center;
+}
+footer .line-footer p span{
+    display: block;
+    font-size: 60%;
+}
+
+
+/* ANIMAÇÕES */
+@keyframes pulsar{
+    100%{
+        transform: scale(1.2);
+        opacity: 0;
+    }
+}
+
+@keyframes degrade{
+    0%{
+        background-position-x: 0%;
+    }
+    100%{
+        background-position: 400%;
+    }
+    
+}
+
+@keyframes deslocar{
+    0%{
+        left: -40px;
+        top: 85%;
+    }
+    50%{
+        left: 40px;
+        top: -50%;
+    }
+    100%{
+        left: 0;
+        top: 0;
+    }
+}
+
+/* MEDIA QUERIES — RESPONSIVIDADE */
+@media screen and (max-width: 1020px) {
+    /* CLASSES GERAIS */
+    .flex{
+        flex-direction: column;
+    }
+
+    /* CABEÇALHO */
+
+    .titulo{
+        font-size: 25px;
+        text-align: center;
+    }
+
+    h1::first-letter{
+        font-size: 35px;
+    }
+
+    /* RODAPÉ */
+    footer .flex{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    footer .line-footer{
+        text-align: center;
+    }
+}
