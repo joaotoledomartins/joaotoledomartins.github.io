@@ -17,7 +17,7 @@ body{
 }
 
 .calculadora, .ultimaOperacao, .caixaOperador, 
-#linhaDisplay, #linhaApagarDisplay, #apagarDisplay, #linhaApagarTudo, #apagarTudo, #linhaVoltar, #voltar, #linhaOperacaoDivisao, #operacaoDivisao, #linhaNum7, #num7, #linhaNum8, #num8, #linhaNum9, #num9, #linhaOperacaoMultiplicacao, #operacaoMultiplicacao, #linhaNum4, #num4, #linhaNum5, #num5, #linhaNum6, #num6, #linhaOperacaoSubtracao, #operacaoSubtracao, #linhaNum1, #num1, #linhaNum2, #num2, #linhaNum3, #num3, #linhaOperacaoAdicao, #operacaoAdicao, #linhaMaisMenos, #maisMenos, #linhaNum0, #num0, #linhaVirgula, #virgula, #linhaIgual, #igual, #linhaOperacaoRaizQuadrada, #operacaoRaizQuadrada, #linhaOperacaoAoQuadrado, #operacaoAoQuadrado, #linhaOperacaoSin, #operacaoSin, #linhaOperacaoCos, #operacaoCos, #linhaOperacaoTan, #operacaoTan{
+#linhaDisplay, #linhaApagarDisplay, #apagarDisplay, #linhaApagarTudo, #apagarTudo, #linhaVoltar, #voltar, #linhaOperacaoDivisao, #operacaoDivisao, #linhaNum7, #num7, #linhaNum8, #num8, #linhaNum9, #num9, #linhaOperacaoMultiplicacao, #operacaoMultiplicacao, #linhaNum4, #num4, #linhaNum5, #num5, #linhaNum6, #num6, #linhaOperacaoSubtracao, #operacaoSubtracao, #linhaNum1, #num1, #linhaNum2, #num2, #linhaNum3, #num3, #linhaOperacaoAdicao, #operacaoAdicao, #linhaMaisMenos, #maisMenos, #linhaNum0, #num0, #linhaVirgula, #virgula, #linhaIgual, #igual, #linhaOperacaoRaizQuadrada, #operacaoRaizQuadrada, #linhaOperacaoAoQuadrado, #operacaoAoQuadrado, #linhaOperacaoSin, #operacaoSin, #linhaOperacaoCos, #operacaoCos, #linhaOperacaoTan, #operacaoTan, #linhaPi, #numP, #linhaOperacaoSin-1, #operacaoSin-1, #linhaOperacaoCos-1, #operacaoCos-1, #linhaOperacaoTan-1, #operacaoTan-1, #linhaOperacaoFatorial, #operacaoFatorial, #linhaOperacaoRaizCubica, #operacaoRaizCubica, #linhaOperacaoAoCubo, #operacaoAoCubo, #linhaOperacaoEnaX, #operacaoEnaX, #linhaOperacao10naX, #operacao10naX, #linhaOperacaoEnesima, #operacaoEnesima, #linhaOperacaoPorcentagem, #operacaoPorcentagem, #linhaOperacaoModulo, #operacaoModulo, #linhaOperacaoLog10, #operacaoLog10, #linhaOperacaoLn, #operacaoLn, #linhaOperacaoLogXnaBaseN, #operacaoLogXnaBaseN{
     visibility: hidden;
 }
 
@@ -261,6 +261,10 @@ td button:active{
     background-color: #ebb41f;
     transform: translateY(5px);
     box-shadow: none;
+}
+
+.numeroPequeno{
+    font-size: 8px;
 }
 
 /* ESTILO DO RODAPÉ */

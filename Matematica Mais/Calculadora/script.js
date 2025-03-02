@@ -9,6 +9,8 @@ const voltar = document.getElementById('voltar');
 const maisMenos = document.getElementById('maisMenos');
 const virgula = document.getElementById('virgula');
 const caixaOperador = document.getElementById('caixaOperador');
+const pi =  Math.PI;
+const e =  Math.E;
 
 
 let numeroNovo = true;
@@ -37,9 +39,27 @@ function operacaoPendente(){
 }
 
 function passarRadiano(grau){
-    console.log((grau * Math.PI)/180);
-    return (grau * Math.PI)/180;
+    return (grau * pi)/180;
 }
+
+function passarGrau(rad){
+    return (rad * 180)/pi;
+}
+
+function fatorial(numero){
+    if(numero == 0){
+        return 1;
+    }
+    else{
+        let produto = 1;
+        for(numero; numero > 0; numero--){
+            produto = produto * numero;
+        }
+        return produto;
+    }
+
+}
+
 
 function calcular(){
     if(operacaoPendente()){
@@ -73,12 +93,59 @@ function calcular(){
             case 'tan':
                 atualizarDisplay(Math.tan(passarRadiano(numeroAnterior)));
                 break;
+            case 'sin-1':
+                atualizarDisplay(passarGrau(Math.asin(numeroAnterior)));
+                break;
+            case 'cos-1':
+                atualizarDisplay(passarGrau(Math.acos(numeroAnterior)));
+                break;
+            case 'tan-1':
+                atualizarDisplay(passarGrau(Math.atan(numeroAnterior)));
+                break;
+            case 'n!':
+                atualizarDisplay(fatorial(numeroAnterior));
+                break;
+            case '∛':
+                atualizarDisplay(Math.cbrt(numeroAnterior));
+                break;
+            case 'x³':
+                atualizarDisplay(Math.pow(numeroAnterior, 3));
+                break;
+            case 'ex':
+                atualizarDisplay(Math.exp(numeroAnterior));
+                break;
+            case '10x':
+                atualizarDisplay(Math.pow(10, numeroAnterior));
+                break;
+            case 'n√x':
+                atualizarDisplay(Math.pow(numeroAtual, 1/numeroAnterior));
+                break;
+             case '%':
+                atualizarDisplay(numeroAnterior/100);
+                break;
+            case '|x|':
+                atualizarDisplay(Math.abs(numeroAnterior));
+                break;
+            case 'log':
+                atualizarDisplay(Math.log10(numeroAnterior));
+                break;
+            case 'ln':
+                atualizarDisplay(Math.log(numeroAnterior));
+                break;
+            case 'log xn':
+                atualizarDisplay(Math.log10(numeroAtual)/Math.log10(numeroAnterior));//NúmeroAnterior: base; númeroAtual: logaritmando
+                break;
         }
     }
 }
 
 function inserirNumero(evento){
-    atualizarDisplay(evento.target.textContent); //Donde o número foi clicado, pegue o seu conteúdo, ou seja, o próprio número, e atualize o display
+    if(evento.target.textContent == "π"){
+        atualizarDisplay(pi);
+    }
+    else{
+        atualizarDisplay(evento.target.textContent); //Donde o número foi clicado, pegue o seu conteúdo, ou seja, o próprio número, e atualize o display
+    }
 }
 
 function selecionarOperacao(evento){
@@ -648,4 +715,244 @@ revelar.reveal('#operacaoTan',
     origin: 'bottom',
     distance: '90px',
     delay: 7000
+});
+
+revelar.reveal('#linhaPi',
+{
+    duration: 1000,
+    origin: 'bottom',
+    distance: '90px',
+    delay: 7200
+});
+
+revelar.reveal('#numPi',
+{
+    duration: 1000,
+    origin: 'bottom',
+    distance: '90px',
+    delay: 7250
+});
+
+revelar.reveal('#linhaOperacaoSin-1',
+{
+    duration: 1000,
+    origin: 'bottom',
+    distance: '90px',
+    delay: 7450
+});
+
+revelar.reveal('#operacaoSin-1',
+{
+    duration: 1000,
+    origin: 'bottom',
+    distance: '90px',
+    delay: 7500
+});
+
+revelar.reveal('#linhaOperacaoCos-1',
+{
+    duration: 1000,
+    origin: 'bottom',
+    distance: '90px',
+    delay: 7700
+});
+
+revelar.reveal('#operacaoCos-1',
+{
+    duration: 1000,
+    origin: 'bottom',
+    distance: '90px',
+    delay: 7750
+});
+
+revelar.reveal('#linhaOperacaoTan-1',
+{
+    duration: 1000,
+    origin: 'bottom',
+    distance: '90px',
+    delay: 7950
+});
+
+revelar.reveal('#operacaoTan-1',
+{
+    duration: 1000,
+    origin: 'bottom',
+    distance: '90px',
+    delay: 8000
+});
+
+revelar.reveal('#linhaOperacaoFatorial',
+{
+    duration: 1000,
+    origin: 'bottom',
+    distance: '90px',
+    delay: 8200
+});
+
+revelar.reveal('#operacaoFatorial',
+{
+    duration: 1000,
+    origin: 'bottom',
+    distance: '90px',
+    delay: 8250
+});
+
+revelar.reveal('#linhaOperacaoRaizCubica',
+{
+    duration: 1000,
+    origin: 'bottom',
+    distance: '90px',
+    delay: 8450
+});
+
+revelar.reveal('#operacaoRaizCubica',
+{
+    duration: 1000,
+    origin: 'bottom',
+    distance: '90px',
+    delay: 8500
+});
+
+revelar.reveal('#linhaOperacaoAoCubo',
+{
+    duration: 1000,
+    origin: 'bottom',
+    distance: '90px',
+    delay: 8700
+});
+
+revelar.reveal('#operacaoAoCubo',
+{
+    duration: 1000,
+    origin: 'bottom',
+    distance: '90px',
+    delay: 8750
+});
+
+revelar.reveal('#linhaOperacaoEnaX',
+{
+    duration: 1000,
+    origin: 'bottom',
+    distance: '90px',
+    delay: 8950
+});
+
+revelar.reveal('#operacaoEnaX',
+{
+    duration: 1000,
+    origin: 'bottom',
+    distance: '90px',
+    delay: 9000
+});
+
+revelar.reveal('#linhaOperacao10naX',
+{
+    duration: 1000,
+    origin: 'bottom',
+    distance: '90px',
+    delay: 9200
+});
+
+revelar.reveal('#operacao10naX',
+{
+    duration: 1000,
+    origin: 'bottom',
+    distance: '90px',
+    delay: 9250
+});
+
+revelar.reveal('#linhaOperacaoEnesima',
+{
+    duration: 1000,
+    origin: 'bottom',
+    distance: '90px',
+    delay: 9450
+});
+
+revelar.reveal('#operacaoEnesima',
+{
+    duration: 1000,
+    origin: 'bottom',
+    distance: '90px',
+    delay: 9500
+});
+
+revelar.reveal('#linhaOperacaoPorcentagem',
+{
+    duration: 1000,
+    origin: 'bottom',
+    distance: '90px',
+    delay: 9700
+});
+
+revelar.reveal('#operacaoPorcentagem',
+{
+    duration: 1000,
+    origin: 'bottom',
+    distance: '90px',
+    delay: 9750
+});
+
+revelar.reveal('#linhaOperacaoModulo',
+{
+    duration: 1000,
+    origin: 'bottom',
+    distance: '90px',
+    delay: 9950
+});
+
+revelar.reveal('#operacaoModulo',
+{
+    duration: 1000,
+    origin: 'bottom',
+    distance: '90px',
+    delay: 10000
+});
+
+revelar.reveal('#linhaOperacaoLog10',
+{
+    duration: 1000,
+    origin: 'bottom',
+    distance: '90px',
+    delay: 10200
+});
+
+revelar.reveal('#operacaoLog10',
+{
+    duration: 1000,
+    origin: 'bottom',
+    distance: '90px',
+    delay: 10250
+});
+
+revelar.reveal('#linhaOperacaoLn',
+{
+    duration: 1000,
+    origin: 'bottom',
+    distance: '90px',
+    delay: 10450
+});
+
+revelar.reveal('#operacaoLn',
+{
+    duration: 1000,
+    origin: 'bottom',
+    distance: '90px',
+    delay: 10500
+});
+
+revelar.reveal('#linhaOperacaoLogXnaBaseN',
+{
+    duration: 1000,
+    origin: 'bottom',
+    distance: '90px',
+    delay: 10700
+});
+
+revelar.reveal('#operacaoLogXnaBaseN',
+{
+    duration: 1000,
+    origin: 'bottom',
+    distance: '90px',
+    delay: 10750
 });
