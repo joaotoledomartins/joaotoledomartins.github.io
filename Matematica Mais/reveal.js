@@ -74,33 +74,68 @@ revelar.reveal('.efeito-link-conteudo',
     origin: 'bottom'
 });
 
-//SESÃO FORMULÁRIO
-revelar.reveal('.efeito-input-form-1',
+//SESSÃO FORMULÁRIO
+revelar.reveal('#efeito-label-form-1',
 {
     duration: 2000,
     distance: '90px',
     delay: 1000,
     origin: 'bottom'
 });
-revelar.reveal('.efeito-input-form-2',
+
+revelar.reveal('.efeito-input-form-1',
+{
+    duration: 2000,
+    distance: '90px',
+    delay: 1200,
+    origin: 'bottom'
+});
+
+revelar.reveal('#efeito-label-form-2',
 {
     duration: 2000,
     distance: '90px',
     delay: 1250,
     origin: 'bottom'
 });
-revelar.reveal('.efeito-input-form-3',
+
+revelar.reveal('.efeito-input-form-2',
+{
+    duration: 2000,
+    distance: '90px',
+    delay: 1450,
+    origin: 'bottom'
+});
+
+revelar.reveal('#efeito-label-form-3',
 {
     duration: 2000,
     distance: '90px',
     delay: 1500,
     origin: 'bottom'
 });
-revelar.reveal('.efeito-input-form-4',
+
+revelar.reveal('.efeito-input-form-3',
+{
+    duration: 2000,
+    distance: '90px',
+    delay: 1700,
+    origin: 'bottom'
+});
+
+revelar.reveal('#efeito-label-form-4',
 {
     duration: 2000,
     distance: '90px',
     delay: 1750,
+    origin: 'bottom'
+});
+
+revelar.reveal('.efeito-input-form-4',
+{
+    duration: 2000,
+    distance: '90px',
+    delay: 1950,
     origin: 'bottom'
 });
 revelar.reveal('.efeito-input-form-5',

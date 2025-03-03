@@ -26,9 +26,7 @@ body{
     display: flex;
 }
 
-.efeito-txt-topo-do-site, .efeito-img-topo-do-site, .titulo, .efeito-objetivo-1, .efeito-objetivo-2, 
-.efeito-objetivo-3, .efeito-img-sobre, .efeito-txt-sobre, .efeito-txt-conteudo, .efeito-link-conteudo, 
-.efeito-input-form-1, .efeito-input-form-2, .efeito-input-form-3, .efeito-input-form-4, .efeito-input-form-5{
+.efeito-txt-topo-do-site, .efeito-img-topo-do-site, .titulo, .efeito-objetivo-1, .efeito-objetivo-2, .efeito-objetivo-3, .efeito-img-sobre, .efeito-txt-sobre, .efeito-txt-conteudo, .efeito-link-conteudo, .efeito-input-form-1, .efeito-input-form-2, .efeito-input-form-3, .efeito-input-form-4, .efeito-input-form-5, #efeito-label-form-1, #efeito-label-form-2, #efeito-label-form-3, #efeito-label-form-4{
     visibility: hidden;
 }
 
