@@ -21,7 +21,7 @@ function trocarplaceHolder(){
 function definirFuncao(){
     if(tipo.value == "quadratica"){
         informacoes.innerHTML = `<div class="conjunto">
-                                <label  class='label' for="coeficienteC">Digite o coeficiente c:</label>
+                                <label id='labelC' class='label' for="coeficienteC">Digite o coeficiente c:</label>
                                 <br/>
                                 <input type="number" name="coeficienteC" id="coeficienteC" placeholder="Ex.: 6">
                                 </div>`;
@@ -34,26 +34,6 @@ function definirFuncao(){
 }
 
 tipo.addEventListener('change', definirFuncao());
-
-
-function valorConcavidade(a){
-    if(a > 0){
-        return true;
-    }
-    else{
-        return false;
-    }
-}
-
-function valorReta(a){
-    if(a > 0){
-        return true;
-    }
-    else{
-        return false;
-    }
-}
-
 
 function virgulaOuPontoVirgula(num1, num2){
     if(num1 % 1 === 0){
@@ -106,9 +86,17 @@ function calcular(){
         let a = document.getElementById('coeficienteA').value;
         let b = document.getElementById('coeficienteB').value;
         let c = document.getElementById('coeficienteC').value;
+        alert(c)
 
-        let concavidade = valorConcavidade(a);//True: +, False: -
-
+        if(a == ''){
+            a = 0;
+        }
+        if(b == ''){
+            b = 0;
+        }
+        if(c == ''){
+            c = 0;
+        }
 
         let valorIncial = c;
         valorIncial = valorIncial + "";
@@ -153,7 +141,7 @@ function calcular(){
             dados.raizes = [x1, x2];
             dados.vertice[0] = xv;
             dados.vertice[1] = yv;
-            if(concavidade){//Positiva
+            if(a > 0){//Positiva
                 dados.pos = `]-∞${virgulaOuPontoVirgula(x1, 0)} ${x1}[ ∪ ]${x2}${virgulaOuPontoVirgula(x2, 0)}+∞[`;
                 dados.neg = `]${x1}${virgulaOuPontoVirgula(x1,0)}${x2}[`;
                 dados.vertice[2] = "Mínimo";
@@ -184,7 +172,7 @@ function calcular(){
             dados.raizes = [x1];
             dados.vertice[0] = xv;
             dados.vertice[1] = yv;
-            if(concavidade){//Positiva
+            if(a > 0){//Positiva
                 dados.pos = `]-∞${virgulaOuPontoVirgula(x1, 0)} ${x1}[ ∪ ]${x1}${virgulaOuPontoVirgula(x1, 0)}+∞[`;
                 dados.neg = ``;
                 dados.vertice[2] = "Mínimo";
@@ -212,7 +200,7 @@ function calcular(){
             dados.raizes = [];
             dados.vertice[0] = xv;
             dados.vertice[1] = yv;
-            if(concavidade){//Positiva
+            if(a > 0){//Positiva
                 dados.pos = `]-∞, +∞[ => Ou seja, para todo o seu domínio`;
                 dados.neg = ``;
                 dados.vertice[2] = "Mínimo";
@@ -231,7 +219,12 @@ function calcular(){
         let a = document.getElementById('coeficienteA').value;
         let b = document.getElementById('coeficienteB').value;
 
-        let concavidade = valorReta(a);//True: +, False: -
+        if(a == ''){
+            a = 0;
+        }
+        if(b == ''){
+            b = 0;
+        }
 
 
         let valorIncial = b;
@@ -299,3 +292,79 @@ enviar.addEventListener('click', function(){
     }
 
 })
+
+
+// SCROOL REVEAL
+window.revelar = ScrollReveal({reset:false});
+
+revelar.reveal('#labelTipo',
+{
+    duration: 2000,
+    origin: 'bottom',
+    distance: '0px',
+});
+
+revelar.reveal('#tipo',
+{
+    duration: 1000,
+    origin: 'bottom',
+    distance: '90px',
+    delay: 100
+});
+
+
+revelar.reveal('#labelFuncao',
+{
+    duration: 2000,
+    origin: 'bottom',
+    distance: '0px',
+    delay: 200
+});
+
+revelar.reveal('#funcao',
+{
+    duration: 1000,
+    origin: 'bottom',
+    distance: '90px',
+    delay: 300
+});
+
+revelar.reveal('#labelA',
+{
+    duration: 2000,
+    origin: 'bottom',
+    distance: '0px',
+    delay: 400
+});
+
+revelar.reveal('#coeficienteA',
+{
+    duration: 1000,
+    origin: 'bottom',
+    distance: '90px',
+    delay: 500
+});
+
+revelar.reveal('#labelB',
+{
+    duration: 2000,
+    origin: 'bottom',
+    distance: '90px',
+    delay: 600
+});
+
+revelar.reveal('#coeficienteB',
+{
+    duration: 1000,
+    origin: 'bottom',
+    distance: '90px',
+    delay: 700
+});
+
+revelar.reveal('#efeito-btn-enviar',
+{
+    duration: 1000,
+    origin: 'bottom',
+    distance: '90px',
+    delay: 800
+});

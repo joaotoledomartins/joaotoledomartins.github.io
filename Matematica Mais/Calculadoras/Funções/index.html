@@ -28,7 +28,7 @@
                 <fieldset>
                     <div class="informacoes">
                         <div class="conjunto">
-                            <label class="label" for="tipo">Tipo da função:</label>
+                            <label id="labelTipo" class="label" for="tipo">Tipo da função:</label>
                             <select name="tipo" id="tipo" onchange="definirFuncao(this)">
                                 <option value="afim" selected>Afim</option>
                                 <option value="quadratica">Quadrática</option>
@@ -36,26 +36,26 @@
                         </div>
                         <br/>
                         <div class="conjunto">
-                            <label class="label" for="funcao">Digite a função:</label>
+                            <label id="labelFuncao" class="label" for="funcao">Digite a função:</label>
                             <br/>
                             <input type="text" name="funcao" id="funcao" placeholder="Ex.: f(x) = x - 5">
                         </div>
                         <br/>
                         <div class="conjunto">
-                            <label class="label" for="coeficienteA">Digite o coeficiente a:</label>
+                            <label id="labelA" class="label" for="coeficienteA">Digite o coeficiente a:</label>
                             <br/>
                             <input type="number" name="coeficienteA" id="coeficienteA" placeholder="Ex.: 1">
                         </div>
                         <br/>
                         <div class="conjunto">
-                            <label class="label" for="coeficienteB">Digite o coeficiente b:</label>
+                            <label id="labelB" class="label" for="coeficienteB">Digite o coeficiente b:</label>
                             <br/>
                             <input type="number" name="coeficienteB" id="coeficienteB" placeholder="Ex.: -5">
                         </div>
                         <br/>
                         <div class="conjunto" id="CaixaCoeficienteC"></div>
                         <br/>
-                        <div class="btn-enviar"><input type="submit" value="Enviar" id="enviar"></div>
+                        <div id="efeito-btn-enviar" class="btn-enviar"><input type="submit" value="Enviar" id="enviar"></div>
                     </div>
                     <div class="respostas" id="resp"></div>
                 </fieldset>

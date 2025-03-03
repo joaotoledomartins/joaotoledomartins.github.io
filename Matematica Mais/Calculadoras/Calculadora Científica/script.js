@@ -333,7 +333,7 @@ revelar.reveal('#apagarDisplay',
     duration: 1000,
     origin: 'bottom',
     distance: '90px',
-    delay: 1000
+    delay: 950
 });
 
 revelar.reveal('#linhaApagarTudo',
@@ -341,7 +341,7 @@ revelar.reveal('#linhaApagarTudo',
     duration: 1000,
     origin: 'bottom',
     distance: '90px',
-    delay: 1200
+    delay: 950
 });
 
 revelar.reveal('#apagarTudo',
@@ -349,7 +349,7 @@ revelar.reveal('#apagarTudo',
     duration: 1000,
     origin: 'bottom',
     distance: '90px',
-    delay: 1250
+    delay: 950
 });
 
 revelar.reveal('#linhaVoltar',
@@ -357,7 +357,7 @@ revelar.reveal('#linhaVoltar',
     duration: 1000,
     origin: 'bottom',
     distance: '90px',
-    delay: 1450
+    delay: 950
 });
 
 revelar.reveal('#voltar',
@@ -365,7 +365,7 @@ revelar.reveal('#voltar',
     duration: 1000,
     origin: 'bottom',
     distance: '90px',
-    delay: 1500
+    delay: 950
 });
 
 revelar.reveal('#linhaOperacaoDivisao',
@@ -373,7 +373,7 @@ revelar.reveal('#linhaOperacaoDivisao',
     duration: 1000,
     origin: 'bottom',
     distance: '90px',
-    delay: 1700
+    delay: 950
 });
     
 revelar.reveal('#operacaoDivisao',
@@ -381,7 +381,7 @@ revelar.reveal('#operacaoDivisao',
     duration: 1000,
     origin: 'bottom',
     distance: '90px',
-    delay: 1750
+    delay: 950
 });
 
 revelar.reveal('#linhaOperacaoRaizQuadrada',
@@ -389,7 +389,7 @@ revelar.reveal('#linhaOperacaoRaizQuadrada',
     duration: 1000,
     origin: 'bottom',
     distance: '90px',
-    delay: 1950
+    delay: 950
 });
         
 revelar.reveal('#operacaoRaizQuadrada',
@@ -397,7 +397,7 @@ revelar.reveal('#operacaoRaizQuadrada',
     duration: 1000,
     origin: 'bottom',
     distance: '90px',
-    delay: 2000
+    delay: 950
 });
 
 revelar.reveal('#linhaNum7',
@@ -405,7 +405,7 @@ revelar.reveal('#linhaNum7',
     duration: 1000,
     origin: 'bottom',
     distance: '90px',
-    delay: 2200
+    delay: 950
 });
 
 revelar.reveal('#num7',
@@ -413,7 +413,7 @@ revelar.reveal('#num7',
     duration: 1000,
     origin: 'bottom',
     distance: '90px',
-    delay: 2250
+    delay: 950
 });
 
 revelar.reveal('#linhaNum8',
@@ -421,7 +421,7 @@ revelar.reveal('#linhaNum8',
     duration: 1000,
     origin: 'bottom',
     distance: '90px',
-    delay: 2450
+    delay: 950
 });
 
 revelar.reveal('#num8',
@@ -429,7 +429,7 @@ revelar.reveal('#num8',
     duration: 1000,
     origin: 'bottom',
     distance: '90px',
-    delay: 2500
+    delay: 950
 });
 
 revelar.reveal('#linhaNum9',
@@ -437,7 +437,7 @@ revelar.reveal('#linhaNum9',
     duration: 1000,
     origin: 'bottom',
     distance: '90px',
-    delay: 2700
+    delay: 950
 });
 
 revelar.reveal('#num9',
@@ -445,7 +445,7 @@ revelar.reveal('#num9',
     duration: 1000,
     origin: 'bottom',
     distance: '90px',
-    delay: 2750
+    delay: 950
 });
 
 revelar.reveal('#linhaOperacaoMultiplicacao',
@@ -453,7 +453,7 @@ revelar.reveal('#linhaOperacaoMultiplicacao',
     duration: 1000,
     origin: 'bottom',
     distance: '90px',
-    delay: 2950
+    delay: 950
 });
 
 revelar.reveal('#operacaoMultiplicacao',
@@ -461,7 +461,7 @@ revelar.reveal('#operacaoMultiplicacao',
     duration: 1000,
     origin: 'bottom',
     distance: '90px',
-    delay: 3000
+    delay: 950
 });
 
 revelar.reveal('#linhaOperacaoAoQuadrado',
@@ -469,7 +469,7 @@ revelar.reveal('#linhaOperacaoAoQuadrado',
     duration: 1000,
     origin: 'bottom',
     distance: '90px',
-    delay: 3200
+    delay: 950
 });
 
 revelar.reveal('#operacaoAoQuadrado',
@@ -477,7 +477,7 @@ revelar.reveal('#operacaoAoQuadrado',
     duration: 1000,
     origin: 'bottom',
     distance: '90px',
-    delay: 3250
+    delay: 950
 });
 
 revelar.reveal('#linhaNum4',
@@ -485,7 +485,7 @@ revelar.reveal('#linhaNum4',
     duration: 1000,
     origin: 'bottom',
     distance: '90px',
-    delay: 3450
+    delay: 950
 });
 
 revelar.reveal('#num4',
@@ -493,7 +493,7 @@ revelar.reveal('#num4',
     duration: 1000,
     origin: 'bottom',
     distance: '90px',
-    delay: 3500
+    delay: 950
 });
 
 revelar.reveal('#linhaNum5',
@@ -501,7 +501,7 @@ revelar.reveal('#linhaNum5',
     duration: 1000,
     origin: 'bottom',
     distance: '90px',
-    delay: 3700
+    delay: 950
 });
 
 revelar.reveal('#num5',
@@ -509,7 +509,7 @@ revelar.reveal('#num5',
     duration: 1000,
     origin: 'bottom',
     distance: '90px',
-    delay: 3750
+    delay: 950
 });
 
 revelar.reveal('#linhaNum6',
@@ -517,7 +517,7 @@ revelar.reveal('#linhaNum6',
     duration: 1000,
     origin: 'bottom',
     distance: '90px',
-    delay: 3950
+    delay: 950
 });
 
 revelar.reveal('#num6',
@@ -525,7 +525,7 @@ revelar.reveal('#num6',
     duration: 1000,
     origin: 'bottom',
     distance: '90px',
-    delay: 4000
+    delay: 950
 });
 
 revelar.reveal('#linhaOperacaoSubtracao',
@@ -533,7 +533,7 @@ revelar.reveal('#linhaOperacaoSubtracao',
     duration: 1000,
     origin: 'bottom',
     distance: '90px',
-    delay: 4200
+    delay: 950
 });
 
 revelar.reveal('#operacaoSubtracao',
@@ -541,7 +541,7 @@ revelar.reveal('#operacaoSubtracao',
     duration: 1000,
     origin: 'bottom',
     distance: '90px',
-    delay: 4250
+    delay: 950
 });
 
 revelar.reveal('#linhaOperacaoSin',
@@ -549,7 +549,7 @@ revelar.reveal('#linhaOperacaoSin',
     duration: 1000,
     origin: 'bottom',
     distance: '90px',
-    delay: 4450
+    delay: 950
 });
 
 revelar.reveal('#operacaoSin',
@@ -557,7 +557,7 @@ revelar.reveal('#operacaoSin',
     duration: 1000,
     origin: 'bottom',
     distance: '90px',
-    delay: 4500
+    delay: 950
 });
 
 revelar.reveal('#linhaNum1',
@@ -565,7 +565,7 @@ revelar.reveal('#linhaNum1',
     duration: 1000,
     origin: 'bottom',
     distance: '90px',
-    delay: 4700
+    delay: 950
 });
 
 revelar.reveal('#num1',
@@ -573,7 +573,7 @@ revelar.reveal('#num1',
     duration: 1000,
     origin: 'bottom',
     distance: '90px',
-    delay: 4750
+    delay: 950
 });
 
 revelar.reveal('#linhaNum2',
@@ -581,7 +581,7 @@ revelar.reveal('#linhaNum2',
     duration: 1000,
     origin: 'bottom',
     distance: '90px',
-    delay: 4950
+    delay: 950
 });
 
 revelar.reveal('#num2',
@@ -589,7 +589,7 @@ revelar.reveal('#num2',
     duration: 1000,
     origin: 'bottom',
     distance: '90px',
-    delay: 5000
+    delay: 950
 });
 
 revelar.reveal('#linhaNum3',
@@ -597,7 +597,7 @@ revelar.reveal('#linhaNum3',
     duration: 1000,
     origin: 'bottom',
     distance: '90px',
-    delay: 5200
+    delay: 950
 });
 
 revelar.reveal('#num3',
@@ -605,7 +605,7 @@ revelar.reveal('#num3',
     duration: 1000,
     origin: 'bottom',
     distance: '90px',
-    delay: 5250
+    delay: 950
 });
 
 revelar.reveal('#linhaOperacaoAdicao',
@@ -613,7 +613,7 @@ revelar.reveal('#linhaOperacaoAdicao',
     duration: 1000,
     origin: 'bottom',
     distance: '90px',
-    delay: 5450
+    delay: 950
 });
 
 revelar.reveal('#operacaoAdicao',
@@ -621,7 +621,7 @@ revelar.reveal('#operacaoAdicao',
     duration: 1000,
     origin: 'bottom',
     distance: '90px',
-    delay: 5500
+    delay: 950
 });
 
 revelar.reveal('#linhaOperacaoCos',
@@ -629,7 +629,7 @@ revelar.reveal('#linhaOperacaoCos',
     duration: 1000,
     origin: 'bottom',
     distance: '90px',
-    delay: 5700
+    delay: 950
 });
 
 revelar.reveal('#operacaoCos',
@@ -637,7 +637,7 @@ revelar.reveal('#operacaoCos',
     duration: 1000,
     origin: 'bottom',
     distance: '90px',
-    delay: 5750
+    delay: 950
 });
 
 revelar.reveal('#linhaMaisMenos',
@@ -645,7 +645,7 @@ revelar.reveal('#linhaMaisMenos',
     duration: 1000,
     origin: 'bottom',
     distance: '90px',
-    delay: 5950
+    delay: 950
 });
 
 revelar.reveal('#maisMenos',
@@ -653,7 +653,7 @@ revelar.reveal('#maisMenos',
     duration: 1000,
     origin: 'bottom',
     distance: '90px',
-    delay: 6000
+    delay: 950
 });
 
 revelar.reveal('#linhaNum0',
@@ -661,7 +661,7 @@ revelar.reveal('#linhaNum0',
     duration: 1000,
     origin: 'bottom',
     distance: '90px',
-    delay: 6200
+    delay: 950
 });
 
 revelar.reveal('#num0',
@@ -669,7 +669,7 @@ revelar.reveal('#num0',
     duration: 1000,
     origin: 'bottom',
     distance: '90px',
-    delay: 6250
+    delay: 950
 });
 
 revelar.reveal('#linhaVirgula',
@@ -677,7 +677,7 @@ revelar.reveal('#linhaVirgula',
     duration: 1000,
     origin: 'bottom',
     distance: '90px',
-    delay: 6450
+    delay: 950
 });
 
 revelar.reveal('#virgula',
@@ -685,7 +685,7 @@ revelar.reveal('#virgula',
     duration: 1000,
     origin: 'bottom',
     distance: '90px',
-    delay: 6500
+    delay: 950
 });
 
 revelar.reveal('#linhaIgual',
@@ -693,7 +693,7 @@ revelar.reveal('#linhaIgual',
     duration: 1000,
     origin: 'bottom',
     distance: '90px',
-    delay: 6700
+    delay: 950
 });
 
 revelar.reveal('#igual',
@@ -701,7 +701,7 @@ revelar.reveal('#igual',
     duration: 1000,
     origin: 'bottom',
     distance: '90px',
-    delay: 6750
+    delay: 950
 });
 
 revelar.reveal('#linhaOperacaoTan',
@@ -709,7 +709,7 @@ revelar.reveal('#linhaOperacaoTan',
     duration: 1000,
     origin: 'bottom',
     distance: '90px',
-    delay: 6950
+    delay: 950
 });
 
 revelar.reveal('#operacaoTan',
@@ -717,7 +717,7 @@ revelar.reveal('#operacaoTan',
     duration: 1000,
     origin: 'bottom',
     distance: '90px',
-    delay: 7000
+    delay: 950
 });
 
 revelar.reveal('#linhaPi',
@@ -725,7 +725,7 @@ revelar.reveal('#linhaPi',
     duration: 1000,
     origin: 'bottom',
     distance: '90px',
-    delay: 7200
+    delay: 950
 });
 
 revelar.reveal('#numPi',
@@ -733,7 +733,7 @@ revelar.reveal('#numPi',
     duration: 1000,
     origin: 'bottom',
     distance: '90px',
-    delay: 7250
+    delay: 950
 });
 
 revelar.reveal('#linhaOperacaoSin-1',
@@ -741,7 +741,7 @@ revelar.reveal('#linhaOperacaoSin-1',
     duration: 1000,
     origin: 'bottom',
     distance: '90px',
-    delay: 7450
+    delay: 950
 });
 
 revelar.reveal('#operacaoSin-1',
@@ -749,7 +749,7 @@ revelar.reveal('#operacaoSin-1',
     duration: 1000,
     origin: 'bottom',
     distance: '90px',
-    delay: 7500
+    delay: 950
 });
 
 revelar.reveal('#linhaOperacaoCos-1',
@@ -757,7 +757,7 @@ revelar.reveal('#linhaOperacaoCos-1',
     duration: 1000,
     origin: 'bottom',
     distance: '90px',
-    delay: 7700
+    delay: 950
 });
 
 revelar.reveal('#operacaoCos-1',
@@ -765,7 +765,7 @@ revelar.reveal('#operacaoCos-1',
     duration: 1000,
     origin: 'bottom',
     distance: '90px',
-    delay: 7750
+    delay: 950
 });
 
 revelar.reveal('#linhaOperacaoTan-1',
@@ -773,7 +773,7 @@ revelar.reveal('#linhaOperacaoTan-1',
     duration: 1000,
     origin: 'bottom',
     distance: '90px',
-    delay: 7950
+    delay: 950
 });
 
 revelar.reveal('#operacaoTan-1',
@@ -781,7 +781,7 @@ revelar.reveal('#operacaoTan-1',
     duration: 1000,
     origin: 'bottom',
     distance: '90px',
-    delay: 8000
+    delay: 950
 });
 
 revelar.reveal('#linhaOperacaoFatorial',
@@ -789,7 +789,7 @@ revelar.reveal('#linhaOperacaoFatorial',
     duration: 1000,
     origin: 'bottom',
     distance: '90px',
-    delay: 8200
+    delay: 950
 });
 
 revelar.reveal('#operacaoFatorial',
@@ -797,7 +797,7 @@ revelar.reveal('#operacaoFatorial',
     duration: 1000,
     origin: 'bottom',
     distance: '90px',
-    delay: 8250
+    delay: 950
 });
 
 revelar.reveal('#linhaOperacaoRaizCubica',
@@ -805,7 +805,7 @@ revelar.reveal('#linhaOperacaoRaizCubica',
     duration: 1000,
     origin: 'bottom',
     distance: '90px',
-    delay: 8450
+    delay: 950
 });
 
 revelar.reveal('#operacaoRaizCubica',
@@ -813,7 +813,7 @@ revelar.reveal('#operacaoRaizCubica',
     duration: 1000,
     origin: 'bottom',
     distance: '90px',
-    delay: 8500
+    delay: 950
 });
 
 revelar.reveal('#linhaOperacaoAoCubo',
@@ -821,7 +821,7 @@ revelar.reveal('#linhaOperacaoAoCubo',
     duration: 1000,
     origin: 'bottom',
     distance: '90px',
-    delay: 8700
+    delay: 950
 });
 
 revelar.reveal('#operacaoAoCubo',
@@ -829,7 +829,7 @@ revelar.reveal('#operacaoAoCubo',
     duration: 1000,
     origin: 'bottom',
     distance: '90px',
-    delay: 8750
+    delay: 950
 });
 
 revelar.reveal('#linhaOperacaoEnaX',
@@ -837,7 +837,7 @@ revelar.reveal('#linhaOperacaoEnaX',
     duration: 1000,
     origin: 'bottom',
     distance: '90px',
-    delay: 8950
+    delay: 950
 });
 
 revelar.reveal('#operacaoEnaX',
@@ -845,7 +845,7 @@ revelar.reveal('#operacaoEnaX',
     duration: 1000,
     origin: 'bottom',
     distance: '90px',
-    delay: 9000
+    delay: 950
 });
 
 revelar.reveal('#linhaOperacao10naX',
@@ -853,7 +853,7 @@ revelar.reveal('#linhaOperacao10naX',
     duration: 1000,
     origin: 'bottom',
     distance: '90px',
-    delay: 9200
+    delay: 950
 });
 
 revelar.reveal('#operacao10naX',
@@ -861,7 +861,7 @@ revelar.reveal('#operacao10naX',
     duration: 1000,
     origin: 'bottom',
     distance: '90px',
-    delay: 9250
+    delay: 950
 });
 
 revelar.reveal('#linhaOperacaoEnesima',
@@ -869,7 +869,7 @@ revelar.reveal('#linhaOperacaoEnesima',
     duration: 1000,
     origin: 'bottom',
     distance: '90px',
-    delay: 9450
+    delay: 950
 });
 
 revelar.reveal('#operacaoEnesima',
@@ -877,7 +877,7 @@ revelar.reveal('#operacaoEnesima',
     duration: 1000,
     origin: 'bottom',
     distance: '90px',
-    delay: 9500
+    delay: 950
 });
 
 revelar.reveal('#linhaOperacaoPorcentagem',
@@ -885,7 +885,7 @@ revelar.reveal('#linhaOperacaoPorcentagem',
     duration: 1000,
     origin: 'bottom',
     distance: '90px',
-    delay: 9700
+    delay: 950
 });
 
 revelar.reveal('#operacaoPorcentagem',
@@ -893,7 +893,7 @@ revelar.reveal('#operacaoPorcentagem',
     duration: 1000,
     origin: 'bottom',
     distance: '90px',
-    delay: 9750
+    delay: 950
 });
 
 revelar.reveal('#linhaOperacaoModulo',
@@ -901,7 +901,7 @@ revelar.reveal('#linhaOperacaoModulo',
     duration: 1000,
     origin: 'bottom',
     distance: '90px',
-    delay: 9950
+    delay: 950
 });
 
 revelar.reveal('#operacaoModulo',
@@ -909,7 +909,7 @@ revelar.reveal('#operacaoModulo',
     duration: 1000,
     origin: 'bottom',
     distance: '90px',
-    delay: 10000
+    delay: 950
 });
 
 revelar.reveal('#linhaOperacaoLog10',
@@ -917,7 +917,7 @@ revelar.reveal('#linhaOperacaoLog10',
     duration: 1000,
     origin: 'bottom',
     distance: '90px',
-    delay: 10200
+    delay: 950
 });
 
 revelar.reveal('#operacaoLog10',
@@ -925,7 +925,7 @@ revelar.reveal('#operacaoLog10',
     duration: 1000,
     origin: 'bottom',
     distance: '90px',
-    delay: 10250
+    delay: 950
 });
 
 revelar.reveal('#linhaOperacaoLn',
@@ -933,7 +933,7 @@ revelar.reveal('#linhaOperacaoLn',
     duration: 1000,
     origin: 'bottom',
     distance: '90px',
-    delay: 10450
+    delay: 950
 });
 
 revelar.reveal('#operacaoLn',
@@ -941,7 +941,7 @@ revelar.reveal('#operacaoLn',
     duration: 1000,
     origin: 'bottom',
     distance: '90px',
-    delay: 10500
+    delay: 950
 });
 
 revelar.reveal('#linhaOperacaoLogXnaBaseN',
@@ -949,7 +949,7 @@ revelar.reveal('#linhaOperacaoLogXnaBaseN',
     duration: 1000,
     origin: 'bottom',
     distance: '90px',
-    delay: 10700
+    delay: 950
 });
 
 revelar.reveal('#operacaoLogXnaBaseN',
@@ -957,5 +957,5 @@ revelar.reveal('#operacaoLogXnaBaseN',
     duration: 1000,
     origin: 'bottom',
     distance: '90px',
-    delay: 10750
+    delay: 950
 });

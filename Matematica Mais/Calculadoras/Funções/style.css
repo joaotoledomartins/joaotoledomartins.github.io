@@ -16,9 +16,9 @@ body{
     height: 100vh;
 }
 
-/*{
+#labelTipo, #tipo, #labelFuncao, #funcao, #labelA, #coeficienteA, #labelB, #coeficienteB, #efeito-btn-enviar{
     visibility: hidden;
-}*/
+}
 
 .interface{
     max-width: 1280px;
