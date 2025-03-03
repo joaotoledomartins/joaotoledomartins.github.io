@@ -7,8 +7,6 @@ const resp = document.getElementById('resp')
 const enviar = document.getElementById('enviar')
 
 
-let xablau = "xablau";
-
 function trocarplaceHolder(){
     if(tipo.value == "quadratica"){
         funcao.placeholder = 'Ex.: x² - 5x + 6';
