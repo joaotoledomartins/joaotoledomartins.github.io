@@ -86,7 +86,6 @@ function calcular(){
         let a = document.getElementById('coeficienteA').value;
         let b = document.getElementById('coeficienteB').value;
         let c = document.getElementById('coeficienteC').value;
-        alert(c)
 
         if(a == ''){
             a = 0;
