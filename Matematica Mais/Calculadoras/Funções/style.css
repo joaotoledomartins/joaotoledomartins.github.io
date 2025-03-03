@@ -375,6 +375,14 @@ footer .line-footer p span{
         font-size: 35px;
     }
 
+    /* INFORMAÇÕES */
+    input, select{
+        width: 130%;
+    }
+    .label{
+        font-size: 18px;
+    }
+
     /* RODAPÉ */
     footer .flex{
         flex-direction: column;

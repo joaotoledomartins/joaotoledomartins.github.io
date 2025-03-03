@@ -6,9 +6,6 @@ const funcao = document.getElementById('funcao');
 const resp = document.getElementById('resp')
 const enviar = document.getElementById('enviar')
 
-const a = document.getElementById('coefcienteA');
-const b = document.getElementById('coefcienteB');
-const c = document.getElementById('coefcienteC');
 
 let xablau = "xablau";
 
@@ -39,23 +36,266 @@ function definirFuncao(){
 tipo.addEventListener('change', definirFuncao());
 
 
+function valorConcavidade(a){
+    if(a > 0){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+
+function valorReta(a){
+    if(a > 0){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+
+
+function virgulaOuPontoVirgula(num1, num2){
+    if(num1 % 1 === 0){
+        return ",";
+    }
+    else{
+        return ";";
+    }
+}
+
+function txtQuantRaizes(arrayRaizes){
+    let tamanho = arrayRaizes.length;
+    if(tamanho == 2){
+        return `As raízes da função são: ${arrayRaizes[0]} e ${arrayRaizes[1]}`;
+    }
+    if(tamanho == 1){
+        return `A raiz da função é: ${arrayRaizes[0]}`;
+    }
+    if(tamanho == 0){
+        if(tipo.value == "quadratica"){
+            return `A função não possui raízes reais (Δ < 0)`;
+        }
+        if(tipo.value == "afim"){
+            return `A função não possui raiz`;
+        }
+    }
+}
+
+function txtPos(pos){
+    if(pos == ``){
+        return `A função nunca é positiva`;
+    }
+    else{
+        return `A função é positiva em: ${pos}`;
+    }
+}
+
+function txtNeg(neg){
+    if(neg == ``){
+        return `A função nunca é negativa`;
+    }
+    else{
+        return `A função é negativa em: ${neg}`;
+    }
+}
+
+function calcular(){
+    if(tipo.value == "quadratica"){
+        let formulaFuncao = document.getElementById('funcao').value;
+        let a = document.getElementById('coeficienteA').value;
+        let b = document.getElementById('coeficienteB').value;
+        let c = document.getElementById('coeficienteC').value;
+
+        let concavidade = valorConcavidade(a);//True: +, False: -
+
+
+        let valorIncial = c;
+        valorIncial = valorIncial + "";
+        valorIncial = valorIncial.replaceAll(".",",");
+
+        let dados = new Object();
+        dados.nome = formulaFuncao;
+        dados.raizes = "";
+        dados.vertice = ["","", ""];
+        dados.valorIncial = valorIncial;
+        dados.pos = "";
+        dados.neg = "";
+
+        let delta = Math.pow(b,2) -4 * a * c;
+
+        if(delta > 0){//Duas raízes ∈ ℝ
+            let x1 = (-b + Math.sqrt(delta))/(2 * a);
+            let x2 = (-b - Math.sqrt(delta))/(2 * a);
+
+            if(x1 > x2){
+               let menorRaiz = x2;
+               x2= x1;
+               x1 = menorRaiz;
+            }
+
+            let xv = (x1 + x2)/2;
+            let yv = (-delta)/(4 * a);
+    
+    
+            x1 = x1 + "";
+            x2 = x2 + "";
+            xv = xv + "";
+            yv = yv + "";
+    
+            x1 = x1.replaceAll(".",",");
+            x2 = x2.replaceAll(".",",");
+            xv = xv.replaceAll(".",",");
+            yv = yv.replaceAll(".",",");
+    
+    
+    
+            dados.raizes = [x1, x2];
+            dados.vertice[0] = xv;
+            dados.vertice[1] = yv;
+            if(concavidade){//Positiva
+                dados.pos = `]-∞${virgulaOuPontoVirgula(x1, 0)} ${x1}[ ∪ ]${x2}${virgulaOuPontoVirgula(x2, 0)}+∞[`;
+                dados.neg = `]${x1}${virgulaOuPontoVirgula(x1,0)}${x2}[`;
+                dados.vertice[2] = "Mínimo";
+    
+            }
+            else{//Negativa
+                dados.pos = `]${x1}${virgulaOuPontoVirgula(x1,0)}${x2}[`;
+                dados.neg = `]-∞${virgulaOuPontoVirgula(x1, 0)} ${x1}[ ∪ ]${x2}${virgulaOuPontoVirgula(x2, 0)}+∞[`;
+                dados.vertice[2] = "Máximo";
+            }
+        }
+        if(delta == 0){//Uma raiz ∈ ℝ
+            let x1 = (-b)/(2 * a);
+
+            let xv = x1;
+            let yv = 0;
+    
+            x1 = x1 + "";
+            xv = xv + "";
+            yv = yv + "";
+    
+            x1 = x1.replaceAll(".",",");
+            xv = xv.replaceAll(".",",");
+            yv = yv.replaceAll(".",",");
+    
+    
+    
+            dados.raizes = [x1];
+            dados.vertice[0] = xv;
+            dados.vertice[1] = yv;
+            if(concavidade){//Positiva
+                dados.pos = `]-∞${virgulaOuPontoVirgula(x1, 0)} ${x1}[ ∪ ]${x1}${virgulaOuPontoVirgula(x1, 0)}+∞[`;
+                dados.neg = ``;
+                dados.vertice[2] = "Mínimo";
+    
+            }
+            else{//Negativa
+                dados.pos = ``;
+                dados.neg = `]-∞${virgulaOuPontoVirgula(x1, 0)} ${x1}[ ∪ ]${x1}${virgulaOuPontoVirgula(x1, 0)}+∞[`;
+                dados.vertice[2] = "Máximo";
+            }
+        }
+        if(delta < 0){//Nenhuma raiz ∈ ℝ
+            let xv = (-b)/(2 * a)
+            let yv = (-delta)/(4 * a);
+    
+    
+            xv = xv + "";
+            yv = yv + "";
+
+            xv = xv.replaceAll(".",",");
+            yv = yv.replaceAll(".",",");
+    
+    
+    
+            dados.raizes = [];
+            dados.vertice[0] = xv;
+            dados.vertice[1] = yv;
+            if(concavidade){//Positiva
+                dados.pos = `]-∞, +∞[ => Ou seja, para todo o seu domínio`;
+                dados.neg = ``;
+                dados.vertice[2] = "Mínimo";
+    
+            }
+            else{//Negativa
+                dados.pos = ``;
+                dados.neg = `]-∞, +∞[ => Ou seja, para todo o seu domínio`;
+                dados.vertice[2] = "Máximo";
+            }
+        }
+        return dados
+    }
+    if(tipo.value == "afim"){
+        let formulaFuncao = document.getElementById('funcao').value;
+        let a = document.getElementById('coeficienteA').value;
+        let b = document.getElementById('coeficienteB').value;
+
+        let concavidade = valorReta(a);//True: +, False: -
+
+
+        let valorIncial = b;
+        valorIncial = valorIncial + "";
+        valorIncial = valorIncial.replaceAll(".",",");
+
+        let dados = new Object();
+        dados.nome = formulaFuncao;
+        dados.raiz = "";
+        dados.valorIncial = valorIncial;
+        dados.pos = "";
+        dados.neg = "";
+
+
+        if(a > 0){//Duas raízes ∈ ℝ
+            let raiz = (-b)/(a);
+            dados.raiz = raiz;
+            dados.neg = `]-∞${virgulaOuPontoVirgula(raiz, 0)} ${raiz}[`;
+            dados.pos = `]${raiz}${virgulaOuPontoVirgula(raiz,0)}+∞[`;
+        }
+        if(a == 0){//Uma raiz ∈ ℝ
+            dados.raiz = [];
+            if(b > 0){
+                dados.pos = `]-∞, +∞[ => Ou seja, para todo o seu domínio (Função Constante)`;
+                dados.neg = ``;
+            }
+            else{
+                if(b < 0){
+                    dados.neg = `]-∞, +∞[ => Ou seja, para todo o seu domínio (Função Constante)`;
+                    dados.pos = ``;
+                }
+                else{
+                    dados.pos = ``;
+                    dados.neg = ``;
+                }
+            }
+        }
+        if(a < 0){//Nenhuma raiz ∈ ℝ
+            let raiz = (-b)/(a);
+            dados.raiz = raiz;
+            dados.pos = `]-∞${virgulaOuPontoVirgula(raiz, 0)} ${raiz}[`;
+            dados.neg = `]${raiz}${virgulaOuPontoVirgula(raiz,0)}+∞[`;
+        }
+        return dados;
+    }
+}
 
 enviar.addEventListener('click', function(){
-    if(tipo.value = "quadratica"){
-        resp.innerHTML = `<p class='txt-resp'>Função: ${xablau}</p>
-    <p class='txt-resp'>As raízes da função são: ${xablau} e ${xablau}</p>
-    <p class='txt-resp'>A Soma e o produto das raízes são respectivamente: ${xablau} e ${xablau}</p>
-    <p class='txt-resp'>O vértice da função é: ${xablau}</p>
-    <p class='txt-resp'>O valor inicial da função é: ${xablau}</p>
-    <p class='txt-resp'>A função é postiva em: ${xablau}</p>
-    <p class='txt-resp'>A função é negaiva em: ${xablau}</p>`
+    if(tipo.value == "quadratica"){
+        let resultado = calcular();
+        resp.innerHTML = `<p class='txt-resp'>Função: ${resultado.nome}</p>
+                            <p class='txt-resp'>${txtQuantRaizes(resultado.raizes)}</p>
+                            <p class='txt-resp'>O ponto de ${resultado.vertice[2]} é: (${resultado.vertice[0]}${virgulaOuPontoVirgula(resultado.vertice[0], )} ${resultado.vertice[1]})</p>
+                            <p class='txt-resp'>O valor inicial da função é: ${resultado.valorIncial}</p>
+                            <p class='txt-resp'>${txtPos(resultado.pos)}</p>
+                            <p class='txt-resp'>${txtNeg(resultado.neg)}</p>`;
     }
-    if(tipo.value = "afim"){
-        resp.innerHTML = `<p class='txt-resp'>Função: ${xablau}</p>
-    <p class='txt-resp'>A raiz da função é: ${xablau}</p>
-    <p class='txt-resp'>O valor inicial da função é: ${xablau}</p>
-    <p class='txt-resp'>A função é postiva em: ${xablau}</p>
-    <p class='txt-resp'>A função é negaiva em: ${xablau}</p>`
+    if(tipo.value == "afim"){
+        let resultado = calcular();
+        resp.innerHTML = `<p class='txt-resp'>Função: ${resultado.nome}</p>
+                            <p class='txt-resp'>${txtQuantRaizes(resultado.raiz)}</p>
+                            <p class='txt-resp'>O valor inicial da função é: ${resultado.valorIncial}</p>
+                            <p class='txt-resp'>${txtPos(resultado.pos)}</p>
+                            <p class='txt-resp'>${txtNeg(resultado.neg)}</p>`;
     }
 
 })
