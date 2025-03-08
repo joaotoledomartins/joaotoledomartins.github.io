@@ -78,6 +78,24 @@ function txtNeg(neg){
     }
 }
 
+function txtCres(cres){
+    if(cres == ``){
+        return `A função nunca é crescente`;
+    }
+    else{
+        return `A função é crescente em: ${cres}`;
+    }
+}
+
+function txtDecres(decres){
+    if(decres == ``){
+        return `A função nunca é decrescente`;
+    }
+    else{
+        return `A função é decrescente em: ${decres}`;
+    }
+}
+
 function calcular(){
     if(tipo.value == "quadratica"){
         let formulaFuncao = document.getElementById('funcao').value;
@@ -106,6 +124,8 @@ function calcular(){
         dados.valorIncial = valorIncial;
         dados.pos = "";
         dados.neg = "";
+        dados.cres = "";
+        dados.decres = "";
 
         let delta = Math.pow(b,2) -4 * a * c;
 
@@ -142,12 +162,16 @@ function calcular(){
                 dados.pos = `]-∞${virgulaOuPontoVirgula(x1, 0)} ${x1}[ ∪ ]${x2}${virgulaOuPontoVirgula(x2, 0)}+∞[`;
                 dados.neg = `]${x1}${virgulaOuPontoVirgula(x1,0)}${x2}[`;
                 dados.vertice[2] = "Mínimo";
+                dados.cres = `]${xv}${virgulaOuPontoVirgula(xv, 0)}+∞[`;
+                dados.decres = `]-∞${virgulaOuPontoVirgula(xv, 0)} ${xv}[`;
     
             }
             else{//Negativa
                 dados.pos = `]${x1}${virgulaOuPontoVirgula(x1,0)}${x2}[`;
                 dados.neg = `]-∞${virgulaOuPontoVirgula(x1, 0)} ${x1}[ ∪ ]${x2}${virgulaOuPontoVirgula(x2, 0)}+∞[`;
                 dados.vertice[2] = "Máximo";
+                dados.cres = `]-∞${virgulaOuPontoVirgula(xv, 0)} ${xv}[`;
+                dados.decres = `]${xv}${virgulaOuPontoVirgula(xv, 0)}+∞[`;
             }
         }
         if(delta == 0){//Uma raiz ∈ ℝ
@@ -173,12 +197,16 @@ function calcular(){
                 dados.pos = `]-∞${virgulaOuPontoVirgula(x1, 0)} ${x1}[ ∪ ]${x1}${virgulaOuPontoVirgula(x1, 0)}+∞[`;
                 dados.neg = ``;
                 dados.vertice[2] = "Mínimo";
+                dados.cres = `]${xv}${virgulaOuPontoVirgula(xv, 0)}+∞[`;
+                dados.decres = `]-∞${virgulaOuPontoVirgula(xv, 0)} ${xv}[`;
     
             }
             else{//Negativa
                 dados.pos = ``;
                 dados.neg = `]-∞${virgulaOuPontoVirgula(x1, 0)} ${x1}[ ∪ ]${x1}${virgulaOuPontoVirgula(x1, 0)}+∞[`;
                 dados.vertice[2] = "Máximo";
+                dados.cres = `]-∞${virgulaOuPontoVirgula(xv, 0)} ${xv}[`;
+                dados.decres = `]${xv}${virgulaOuPontoVirgula(xv, 0)}+∞[`;
             }
         }
         if(delta < 0){//Nenhuma raiz ∈ ℝ
@@ -201,12 +229,16 @@ function calcular(){
                 dados.pos = `]-∞, +∞[ => Ou seja, para todo o seu domínio`;
                 dados.neg = ``;
                 dados.vertice[2] = "Mínimo";
+                dados.cres = `]${xv}${virgulaOuPontoVirgula(xv, 0)}+∞[`;
+                dados.decres = `]-∞${virgulaOuPontoVirgula(xv, 0)} ${xv}[`;
     
             }
             else{//Negativa
                 dados.pos = ``;
                 dados.neg = `]-∞, +∞[ => Ou seja, para todo o seu domínio`;
                 dados.vertice[2] = "Máximo";
+                dados.cres = `]-∞${virgulaOuPontoVirgula(xv, 0)} ${xv}[`;
+                dados.decres = `]${xv}${virgulaOuPontoVirgula(xv, 0)}+∞[`;
             }
         }
         return dados
@@ -234,6 +266,8 @@ function calcular(){
         dados.valorIncial = valorIncial;
         dados.pos = "";
         dados.neg = "";
+        dados.cres = "";
+        dados.decres = "";
 
 
         if(a > 0){//Duas raízes ∈ ℝ
@@ -241,9 +275,13 @@ function calcular(){
             dados.raiz = raiz;
             dados.neg = `]-∞${virgulaOuPontoVirgula(raiz, 0)} ${raiz}[`;
             dados.pos = `]${raiz}${virgulaOuPontoVirgula(raiz,0)}+∞[`;
+            dados.cres = `]-∞, +∞[ => Ou seja, semepre será crescente`;
+            dados.decres = '';
         }
         if(a == 0){//Uma raiz ∈ ℝ
             dados.raiz = [];
+            dados.cres = '';
+            dados.decres = '';
             if(b > 0){
                 dados.pos = `]-∞, +∞[ => Ou seja, para todo o seu domínio (Função Constante)`;
                 dados.neg = ``;
@@ -264,6 +302,8 @@ function calcular(){
             dados.raiz = raiz;
             dados.pos = `]-∞${virgulaOuPontoVirgula(raiz, 0)} ${raiz}[`;
             dados.neg = `]${raiz}${virgulaOuPontoVirgula(raiz,0)}+∞[`;
+            dados.cres = '';
+            dados.decres = `]-∞, +∞[ => Ou seja, semepre será decrescente`;
         }
         return dados;
     }
@@ -277,7 +317,9 @@ enviar.addEventListener('click', function(){
                             <p class='txt-resp'>O ponto de ${resultado.vertice[2]} é: (${resultado.vertice[0]}${virgulaOuPontoVirgula(resultado.vertice[0], )} ${resultado.vertice[1]})</p>
                             <p class='txt-resp'>O valor inicial da função é: ${resultado.valorIncial}</p>
                             <p class='txt-resp'>${txtPos(resultado.pos)}</p>
-                            <p class='txt-resp'>${txtNeg(resultado.neg)}</p>`;
+                            <p class='txt-resp'>${txtNeg(resultado.neg)}</p>
+                            <p class='txt-resp'>${txtCres(resultado.cres)}</p>
+                            <p class='txt-resp'>${txtDecres(resultado.decres)}</p>`;
     }
     if(tipo.value == "afim"){
         let resultado = calcular();
@@ -285,7 +327,9 @@ enviar.addEventListener('click', function(){
                             <p class='txt-resp'>${txtQuantRaizes(resultado.raiz)}</p>
                             <p class='txt-resp'>O valor inicial da função é: ${resultado.valorIncial}</p>
                             <p class='txt-resp'>${txtPos(resultado.pos)}</p>
-                            <p class='txt-resp'>${txtNeg(resultado.neg)}</p>`;
+                            <p class='txt-resp'>${txtNeg(resultado.neg)}</p>
+                            <p class='txt-resp'>${txtCres(resultado.cres)}</p>
+                            <p class='txt-resp'>${txtDecres(resultado.decres)}</p>`;
     }
 
 })
