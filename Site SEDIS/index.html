@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="menu.js" defer></script>
+    <link rel="shortcut icon" href="./Images/Logo SEDIS.png">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="reveal.js" defer></script>
+    <title>SEDIS</title>
+</head>
+<body>
+    <header id="header">
+        <div class="interface">
+            <div class="logo">
+                <img class="img-header" src="./Images/Logo SEDIS.png" alt="Logo da SEDIS">
+            </div>
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a class="borda-dinamica" href="#topo-do-site">Início</a></li>
+                    <li><a class="borda-dinamica" href="#objetivos">Objetivos</a></li>
+                    <li><a class="borda-dinamica" href="#sobre">Sobre</a></li>
+                    <li><a class="borda-dinamica" href="#integrantes">Integrantes</a></li>
+                </ul>
+            </nav>
+            <div class="btn-contato">
+                <a href="#formulario">
+                    <button class="btn-pulsante">Contato</button>
+                </a>
+            </div>
+
+            <div class="btn-abri-menu" id="btn-menu">
+                <i class="bi bi-list"></i>
+            </div>
+
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <i class="bi bi-x-lg"></i>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#topo-do-site">Início</a></li>
+                        <li><a href="#objetivos">Objetivos</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#integrantes">Integrantes</a></li>
+                        <li><a href="#formulario">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="overlay-menu" id="overlay-menu"></div>
+        </div>
+        
+    </header>
+    <main>
+        <section class="topo-do-site" id="topo-do-site">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt-topo-do-site efeito-txt-topo-do-site">
+                        <h1 class="txt-degrade">Seja bem-ido ao site da SEDIS</h1>
+                        <p>Esse é o site da SEDIS!</p>
+                        <div class="btn-contato">
+                            <a target="_blank" href="https://wa.me/+5522992760116">
+                                <button class="btn-pulsante">Mande-nos mensagem!</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="img-topo-do-site efeito-img-topo-do-site">
+                        <img src="./Images/Logo SEDIS.png" alt="Logo da SEDIS">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="objetivos" id="objetivos">
+            <div class="interface">
+                <h2 class="titulo">Nossos <span>objetivos.</span></h2>
+                <div class="flex">
+                    <div class="objetivos-box efeito-objetivo-1 objetivos-card" id="gif-1">
+                        <i class="bi bi-calculator txt-degrade"></i>
+                        <h3>Matemática</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus temporibus inventore iste! Accusamus similique rerum dolore inventore debitis rem pariatur iusto a ipsam amet optio delectus, ipsa nulla aspernatur praesentium?</p>
+                    </div>
+                    <div class="objetivos-box efeito-objetivo-2 objetivos-card" id="gif-2">
+                        <i class="bi bi-backpack txt-degrade"></i>
+                        <h3>Escola</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus temporibus inventore iste! Accusamus similique rerum dolore inventore debitis rem pariatur iusto a ipsam amet optio delectus, ipsa nulla aspernatur praesentium?</p>
+                    </div>
+                    <div class="objetivos-box efeito-objetivo-3 objetivos-card" id="gif-3">
+                        <i class="bi bi-123 txt-degrade"></i>
+                        <h3>Números</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus temporibus inventore iste! Accusamus similique rerum dolore inventore debitis rem pariatur iusto a ipsam amet optio delectus, ipsa nulla aspernatur praesentium?</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sobre" id="sobre">
+            <div class="interface">
+                <div class="flex">
+                    <div class="img-sobre efeito-img-sobre">
+                        <img src="./Images/Logo SEDIS.png" alt="" class="sobre">
+                    </div>
+                    <div class="txt-sobre efeito-txt-sobre">
+                        <h2>Seja bem-vindo, aluno! <span>Esse é o Matemática Mais.</span></h2>
+                        <p>Nosso setor tem como missão principal contribuir no processo formativo dos jovens e adolescentes da educação profissional técnica de nível médio na modalidade integrada da instituição, visando à formação integral cidadã dos estudantes.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt corrupti itaque cumque omnis dicta sapiente obcaecati veniam nobis consequuntur iure, architecto perferendis odit magnam doloribus vero hic totam autem ut?</p>
+                        <div class="btn-social">
+                            <a class="link-social" href="https://www.instagram.com/sedis.cefet/" target="_blank"><button class="link-insta"><i class="bi bi-instagram insta"></i></button></a>
+                            <a class="link-social" href="https://wa.me/+5522992760116"><button class="link-zap"><i class="bi bi-whatsapp" target="_blank"></i></button></a>
+                            <a class="link-social" href="mailto:sedis.cefet@gmail.com" target="_blank"><button class="link-email"><i class="bi bi-envelope"></i></button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="integrantes" id="integrantes">
+            <div class="interface">
+                <h2 class="titulo">Nossos <span>Integrantes.</span></h2>
+                <div class="flex">
+                    <div>
+                        <h3 class="txt-degrade efeito-txt-integrantes">André</h3>
+                        <a class="efeito-link-integrantes" href="https://www.instagram.com/andpereiramelo/">
+                            <div class="img-integrantes" style="background-image: url(./Images/André.png);">
+                                <div class="overlay">@andpereiramelo</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <h3 class="txt-degrade efeito-txt-integrantes">Júlia</h3>
+                        <a class="efeito-link-integrantes" href="https://www.instagram.com/julia_eyer/">
+                            <div class="img-integrantes" style="background-image: url(./Images/Júlia.png);">
+                                <div class="overlay">@julia_eyer</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <h3 class="txt-degrade efeito-txt-integrantes">Laio</h3>
+                        <a class="efeito-link-integrantes" href="https://www.instagram.com/laio_lorryan/">
+                            <div class="img-integrantes" style="background-image: url(./Images/Laio.jpg);">
+                                <div class="overlay">@laio_lorryan</div>
+                            </div> 
+                        </a>  
+                    </div> 
+                </div>
+                </div><!--Caso queira adicionar mais integrantes, é duplicar a div.flex-->
+            </div>
+        </section>
+        <section class="formulario" id="formulario">
+            <div class="interface">
+                <h2 class="titulo">
+                    <span class="span-form span-form-fale">F</span>
+                    <span class="span-form span-form-fale">a</span>
+                    <span class="span-form span-form-fale">l</span>
+                    <span class="span-form span-form-fale">e</span>
+                    <span class="span-form">C</span>
+                    <span class="span-form">o</span>
+                    <span class="span-form">n</span>
+                    <span class="span-form">o</span>
+                    <span class="span-form">s</span>
+                    <span class="span-form">c</span>
+                    <span class="span-form">o</span>
+                    <span class="span-form">.</span>
+                </h2>
+                <form action="https://formsubmit.co/sedis.cefet@gmail.com" method="POST">
+                    <div class="entryarea">
+                        <input class="efeito-input-form-1" type="text" name="nome" id="nome" required>
+                        <div class="linha-label" id="efeito-label-form-1">Digite seu nome:</div>
+                    </div>
+                    <div class="entryarea">
+                        <textarea class="efeito-input-form-2" name="mensagem" id="mensagem" required></textarea>
+                        <div class="linha-label" id="efeito-label-form-2">Digite sua mensagem:</div>
+                    </div>
+                    <input type="hidden" name="_next" value="https://joaotoledomartins.github.io/Site%20Sedis/obrigado.html">
+                    <input type="hidden" name="_subject" value="Nova mensagem!">
+                    <div class="btn-enviar"><input class="efeito-input-form-3" type="submit" value="Enviar"></div>
+                </form>
+                
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="interface">
+            <div class="line-footer">
+                <div class="flex">
+                    <div class="btn-social">
+                        <a class="link-social" href="https://www.instagram.com/sedis.cefet/" target="_blank"><button class="link-insta"><i class="bi bi-instagram"></i></button></a>
+                        <a class="link-social" href="https://wa.me/+5522992760116"><button class="link-zap"><i class="bi bi-whatsapp" target="_blank"></i></button></a>
+                        <a class="link-social" href="mailto:sedis.cefet@gmail.com" target="_blank"><button class="link-email"><i class="bi bi-envelope"></i></button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="line-footer borda">
+                <p>Feito por João Pedro Toledo Martins <span>Inspirado em Bruno Rodrigues • Inteliogia</span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
