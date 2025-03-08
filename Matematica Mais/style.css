@@ -618,8 +618,8 @@ form .entryarea input:focus, form  .entryarea textarea:focus, form .entryarea in
 
 form .entryarea input:focus + .linha-label, form  .entryarea textarea:focus + .linha-label, form .entryarea input:valid + .linha-label, form  .entryarea textarea:valid + .linha-label{
     color: #00ff00;
-    height: 30px;
-    line-height: 30px;
+    height: 15px;
+    line-height: 15px;
     padding: 0 12px;
     transform: translate(-15px, -16px) scale(0.88);
     z-index: 1111;
