@@ -22,20 +22,20 @@ revelar.reveal('.titulo',
     distance: '90px'
 });
 
-//SESSÃO DE OBJETIVOS
-revelar.reveal('.efeito-objetivo-1',
+//SESSÃO DAS ATIVIDADES
+revelar.reveal('.efeito-atividade-1',
 {
     duration: 2000,
     distance: '90px',
     delay: 500
 });
-revelar.reveal('.efeito-objetivo-2',
+revelar.reveal('.efeito-atividade-2',
 {
     duration: 2000,
     distance: '90px',
     delay: 1000
 });
-revelar.reveal('.efeito-objetivo-3',
+revelar.reveal('.efeito-atividade-3',
 {
     duration: 2000,
     distance: '90px',
@@ -58,7 +58,7 @@ revelar.reveal('.efeito-txt-sobre',
     origin: 'bottom'
 });
 
-//SESSÃO CONTEÚDOS
+//SESSÃO DOS INTEGRANTES
 revelar.reveal('.efeito-txt-integrantes',
 {
     duration: 2000,

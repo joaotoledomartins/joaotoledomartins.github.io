@@ -26,7 +26,7 @@ body{
     display: flex;
 }
 
-.efeito-txt-topo-do-site, .efeito-img-topo-do-site, .titulo, .efeito-objetivo-1, .efeito-objetivo-2, .efeito-objetivo-3, .efeito-img-sobre, .efeito-txt-sobre, .efeito-txt-integrantes, .efeito-link-integrantes, .efeito-input-form-1, .efeito-input-form-2, .efeito-input-form-3, #efeito-label-form-1, #efeito-label-form-2{
+.efeito-txt-topo-do-site, .efeito-img-topo-do-site, .titulo, .efeito-atividade-1, .efeito-atividade-2, .efeito-atividade-3, .efeito-img-sobre, .efeito-txt-sobre, .efeito-txt-integrantes, .efeito-link-integrantes, .efeito-input-form-1, .efeito-input-form-2, .efeito-input-form-3, #efeito-label-form-1, #efeito-label-form-2{
     visibility: hidden;
 }
 
@@ -422,18 +422,17 @@ section.topo-do-site .flex{
 
 }
 
-/* ESTILO DOS OBJETIVOS */
-section.objetivos{
+/* ESTILO DAS ATIVIDADES */
+section.atividades{
     padding: 40px 4%;
 }
 
-section.objetivos .flex{
+section.atividades .flex{
     gap: 60px;
 }
 
-.objetivos .objetivos-box{
+.atividades .atividades-box{
     width: 100%;
-    height: 100%;
     color: #fff;
     padding: 50px;
     border-radius: 20px;
@@ -462,18 +461,22 @@ section.objetivos .flex{
 
 }
 
-.objetivos .objetivos-box:hover{
+.atividades .atividades-box:hover{
     transform: scale(1.05);
     box-shadow: 0px 0px 8px #ffffff78;
 }
 
-.objetivos .objetivos-box i{
+.atividades .atividades-box i{
     font-size: 70px;
 }
 
-.objetivos .objetivos-box h3{
+.atividades .atividades-box h3{
     font-size: 28px;
     margin: 15px 0;
+}
+
+#btn-atividades{
+    margin-top: 30px;
 }
 
 /* ESTILO SOBRE */
@@ -796,8 +799,8 @@ footer .line-footer p span{
         display: block;
     }
 
-    /* OBJETIVOS */
-    section.objetivos{
+    /* atividades */
+    section.atividades{
         padding: 40px 8%;
     }
 
