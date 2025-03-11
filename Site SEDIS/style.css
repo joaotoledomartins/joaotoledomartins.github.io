@@ -442,20 +442,20 @@ section.atividades .flex{
 }
 
 #gif-1:hover{
-    background-image: url('https://www.gifsanimados.org/data/media/712/numero-imagen-animada-0195.gif');
+    background-image: url('./Images/abraco.gif');
     background-size: cover;
     background-position: center;
 }
 
 #gif-2:hover{
-    background-image: url('https://www.gifsanimados.org/data/media/712/numero-imagen-animada-0196.gif');
+    background-image: url('./Images/café.gif');
     background-size: cover;
     background-position: center;
 
 }
 
 #gif-3:hover{
-    background-image: url('https://www.gifsanimados.org/data/media/712/numero-imagen-animada-0197.gif');
+    background-image: url('./Images/achados\ e\ perdidos.gif');
     background-size: cover;
     background-position: center;
 
