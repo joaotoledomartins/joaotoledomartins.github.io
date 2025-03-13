@@ -98,6 +98,7 @@ h2.titulo span.span-form-fale{
 }
 
 .btn-contato button{
+    color: #E7D917;
     padding: 10px 40px;
     font-size: 18px;
     font-weight: 600;
@@ -799,11 +800,10 @@ footer .line-footer p span{
         display: block;
     }
 
-    /* atividades */
+    /* ATIVIDADES */
     section.atividades{
         padding: 40px 8%;
     }
-
     /* SOBRE */
     section.sobre{
         padding: 80px 8%;
