@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Material Sedis</title>
+        <link rel="stylesheet" href="./style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script defer src="./material.js"></script>
+    </head>
+    <body id="corpo">
+        <header>
+            <div id="container-header">
+                <h1 class="title">Material Sedis</h1>
+            </div>
+        </header>
+        <main id="container-main">
+            <div id="corpo-main">
+                <form id="materialForm">
+                    <label for="nome" class="label">Nome aluno:</label>
+                    <input type="text" id="input-nome" name="nome" class="form-control" required>
+                    <label for="material" class="label">Materiais:</label>
+                    <select name="material" id="select-material" class="form-select" required>
+                        <option value="" disabled selected hidden>Selecione um material</option>
+                        <option value="Bola de Vôlei">Bola de Vôlei</option>
+                        <option value="Bola de Futsal">Bola de Futsal</option>
+                        <option value="Ping-pong">Ping-pong</option>
+                        <option value="Xadrez">Xadrez</option>
+                        <option value="Uno">Uno</option>
+                        <option value="Talheres">Talheres</option>
+                        <option value="Roupas">Roupas</option>
+                        <option value="Microfone">Microfone</option>
+                        <option value="Caixa de Som">Caixa de Som</option>
+                        <option value="Roteador">Roteador</option>
+                    </select>
+                    <label for="data" class="label">Data de retirada:</label>
+                    <input type="date" name="data" id="input-data" class="form-control" required>
+                    <label for="curso" class="label">Curso:</label>
+                    <select name="curso" id="select-curso" class="form-select" required>
+                        <option value="" disabled selected hidden>Selecione uma turma</option>
+                        <option value="INFO-1">INFO-1</option>
+                        <option value="ADM-1">ADM-1</option>
+                        <option value="INFO-2">INFO-2</option>
+                        <option value="ADM-2">ADM-2</option>
+                        <option value="INFO-3">INFO-3</option>
+                        <option value="ADM-3">ADM-3</option>
+                        <option value="ENGENHARIA ELÉTRICA">ENGENHARIA ELÉTRICA</option>
+                        <option value="ENGENHARIA ELÉTRICA">FÍSICA</option>
+                        <option value="SISTEMA DE INFORMAÇÃO">SISTEMA DE INFORMAÇÃO</option>
+                        <option value="TURISMO">TURISMO</option>
+                        <option value="PROFESSORES">PROFESSORES</option>
+                    </select>
+                    <div id="div-buttons">
+                        <input type="submit" value="Adicionar" class="btn btn-primary button">
+                        <input type="reset" value="Limpar" class="btn btn-primary button">
+                    </div>
+                </form>
+            </div>
+            <div id="lista">
+                <h3 id="title-pendencia">Lista de Pendências</h3>
+                <ul id="listaRegistros"></ul>
+            </div>  
+        </main>
+        <footer id="container-footer"></footer>
+</body>
+</html>
