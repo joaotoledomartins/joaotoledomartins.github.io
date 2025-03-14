@@ -5,12 +5,40 @@
     background-position: center; 
     background-repeat: no-repeat; 
 }
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25%;
+}
+
 .title{     
     color: white;
-    text-align: center;
     margin-top: 20px;
+    text-align: center;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
+#btn-header button{
+    margin-top: 20px;
+    color: #fff;
+    padding: 5px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #0065ff;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+#btn-header button:hover{
+    box-shadow: 0px 0px 8px #0065ff;
+    transform: scale(1.05);
+}
+
+
 #corpo-main{
     width: 35%;
     height: 390px;
