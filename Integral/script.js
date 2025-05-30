@@ -17,7 +17,7 @@ function trocarplaceHolder(){
 }
 
 function definirFuncao(){
-    if(tipo.value == "seno"){
+    if(tipo.value == "seno" || tipo.value == "e^-x²" || tipo.value == "seno/x" || tipo.value == "cos"){
         informacoes.innerHTML = `<div class="conjunto">
                                 <label id='labelC' class='label' for="n">Digite n:</label>
                                 <br/>
@@ -323,7 +323,6 @@ function calculaIntegral(){
                 b = Math.PI;
             }
         }
-        console.log(b);
         let termoMultiplicador = ((b-a)/n);
         let multiplicacaoDaVez = 0;
         let termoDaVez = 0;
@@ -336,6 +335,93 @@ function calculaIntegral(){
             multiplicacaoDaVez = i*termoMultiplicador;
             termoDaVez = a+multiplicacaoDaVez;
             somaDaVez = Math.sin(termoDaVez);
+            somatorio = somatorio + somaDaVez;
+            
+        }
+        return termoMultiplicador * somatorio;
+    }
+    if(tipo.value == "e^-x²"){
+        let formulaFuncao = document.getElementById('funcao').value;
+        let a = document.getElementById('a').value;
+        let b = document.getElementById('b').value;
+        let n = document.getElementById('n').value;
+        if(a == "π"){
+            a = Math.PI;
+        }else{
+            if(b == "π"){
+                b = Math.PI;
+            }
+        }
+        let termoMultiplicador = ((b-a)/n);
+        let multiplicacaoDaVez = 0;
+        let termoDaVez = 0;
+        let somaDaVez = 0;
+        let somatorio = 0;
+
+        
+    
+        for (let i = 0; i < n; i++) {
+            multiplicacaoDaVez = i*termoMultiplicador;
+            termoDaVez = a+multiplicacaoDaVez;
+            somaDaVez = Math.pow(Math.E, -(Math.pow(termoDaVez, 2)));
+            somatorio = somatorio + somaDaVez;
+            
+        }
+        return termoMultiplicador * somatorio;
+    }
+    if(tipo.value == "seno/x"){
+        let formulaFuncao = document.getElementById('funcao').value;
+        let a = document.getElementById('a').value;
+        let b = document.getElementById('b').value;
+        let n = document.getElementById('n').value;
+        if(a == "π"){
+            a = Math.PI;
+        }else{
+            if(b == "π"){
+                b = Math.PI;
+            }
+        }
+        let termoMultiplicador = ((b-a)/n);
+        let multiplicacaoDaVez = 0;
+        let termoDaVez = 0;
+        let somaDaVez = 0;
+        let somatorio = 0;
+
+        
+    
+        for (let i = 0; i < n; i++) {
+            multiplicacaoDaVez = i*termoMultiplicador;
+            termoDaVez = a+multiplicacaoDaVez;
+            somaDaVez = (Math.sin(termoDaVez))/termoDaVez;
+            somatorio = somatorio + somaDaVez;
+            
+        }
+        return termoMultiplicador * somatorio;
+    }
+    if(tipo.value == "cos"){
+        let formulaFuncao = document.getElementById('funcao').value;
+        let a = document.getElementById('a').value;
+        let b = document.getElementById('b').value;
+        let n = document.getElementById('n').value;
+        if(a == "π"){
+            a = Math.PI;
+        }else{
+            if(b == "π"){
+                b = Math.PI;
+            }
+        }
+        let termoMultiplicador = ((b-a)/n);
+        let multiplicacaoDaVez = 0;
+        let termoDaVez = 0;
+        let somaDaVez = 0;
+        let somatorio = 0;
+
+        
+    
+        for (let i = 0; i < n; i++) {
+            multiplicacaoDaVez = i*termoMultiplicador;
+            termoDaVez = a+multiplicacaoDaVez;
+            somaDaVez = Math.cos(termoDaVez);
             somatorio = somatorio + somaDaVez;
             
         }
@@ -367,7 +453,7 @@ enviar.addEventListener('click', function(){
                             <p class='txt-resp'>${txtCres(resultado.cres)}</p>
                             <p class='txt-resp'>${txtDecres(resultado.decres)}</p>`;
     }*/
-    if(tipo.value == "seno"){
+    if(tipo.value == "seno" || tipo.value == "e^-x²" || tipo.value == "seno/x" || tipo.value == "cos"){
         let resultado = calculaIntegral();
         resp.innerHTML = `<p class='txt-resp'>${resultado}</p>`;
     }
