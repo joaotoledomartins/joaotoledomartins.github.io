@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Lançamento de Dados</title>
+    
+    <script src="https://cdn.plot.ly/plotly-2.35.2.min.js" charset="utf-8"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Simulador de Lançamento de Dados</h1>
+        <div class="subtitle">Estatística e probabilidades processadas nativamente de forma instantânea.</div>
+        
+        <div class="input-group">
+            <div class="input-field">
+                <label for="quantLancamentos">Qtd. Lançamentos:</label>
+                <input type="number" id="quantLancamentos" value="1000" min="1">
+            </div>
+            <div class="input-field">
+                <label for="quantDados">Qtd. Dados:</label>
+                <input type="number" id="quantDados" value="2" min="1">
+            </div>
+            <div class="input-field">
+                <label for="maiorNumero">Maior Número (Lados):</label>
+                <input type="number" id="maiorNumero" value="6" min="2">
+            </div>
+        </div>
+
+        <button id="btn-calcular" onclick="rodarSimulacao()">Rodar Simulação</button>
+
+        <div class="output-section">
+            <h3>Matriz de Frequências Computada:</h3>
+            <pre id="matrix-output">Altere os parâmetros acima e clique no botão para calcular.</pre>
+        </div>
+
+        <div class="output-section">
+            <h3>Visualização Interativa (Plotly.js):</h3>
+            <div id="graph-output"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
